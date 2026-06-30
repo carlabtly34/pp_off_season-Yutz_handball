@@ -248,139 +248,151 @@ const WEEK_NAMES = [
 // s = session key, t = type css, opt = optionnel
 // =====================================================================
 const CALENDARS = {
-  '17cdf': [
-    // Semaine 1
-    [ [{s:'mob-17a',t:'mob',label:'Protocole prévention'}],
+  '17cdf':   [
+    [
+      [{s:'mob-17a',t:'mob',label:'Protocole prévention'}],
       [{s:'run-ef1-s1',t:'run',label:'EF Run 1'}],
-      [{s:'gac1',t:'gac',label:'GAC 1'}],
-      [{s:'run-vma',t:'run',label:'Test VMA ½ Cooper'},],
-      [{s:'gac1',t:'gac',label:'GAC 1'}],
-      [{s:'mob-17b',t:'mob',label:'Protocole prévention'}],
-      [{s:'run-ef-opt',t:'run opt',label:'EF 20 min (optionnel)'}] ],
-    // Semaine 2
-    [ [{s:'mob-17a',t:'mob',label:'Protocole prévention'}],
+      [{s:'gac1',t:'gac',label:'GAC 1 — Gainage global'}],
+      [{s:'run-vma',t:'run',label:'Test VMA ½ Cooper'}],
+      [{s:'gac2',t:'gac',label:'GAC 2 — Anti-rotation'}],
+      [{s:'mob-17b',t:'mob opt',label:'Protocole prévention (opt.)'}],
+      [{s:'run-ef-opt',t:'run opt',label:'EF 20 min (opt.)'}]
+    ],
+    [
+      [{s:'mob-17a',t:'mob',label:'Protocole prévention'}],
       [{s:'run-ef2-s2',t:'run',label:'EF 20–30 min'}],
       [{s:'rm1',t:'rm',label:'RM 1'}],
-      [{s:'mob-17b',t:'mob',label:'Protocole prévention'},{s:'gac2',t:'gac',label:'GAC 2'}],
+      [{s:'mob-17b',t:'mob',label:'Protocole prévention'},{s:'gac3',t:'gac',label:'GAC 3 — Flexion tronc'}],
       [{s:'run-fsl',t:'run',label:'FSL'}],
       [{s:'mob-17b',t:'mob',label:'Protocole prévention'},{s:'rm2',t:'rm',label:'RM 2'}],
-      [{s:'gac2',t:'gac',label:'GAC 2'}] ],
-    // Semaine 3
-    [ [{s:'wod1',t:'wod',label:'WOD 1'}],
-      [{s:'run-ef3-s3',t:'run',label:'EF 35 min'},{s:'gac3',t:'gac',label:'GAC 3'}],
+      [{s:'gac4',t:'gac',label:'GAC 4 — Chaîne croisée'}]
+    ],
+    [
+      [{s:'wod1',t:'wod',label:'WOD 1'}],
+      [{s:'run-ef3-s3',t:'run',label:'EF 35 min'},{s:'gac5',t:'gac',label:'GAC 5 — Stabilité dyn.'}],
       [{s:'rm3',t:'rm',label:'RM 3'}],
-      [{s:'mob-17a',t:'mob',label:'Protocole prévention'},{s:'gac3',t:'gac',label:'GAC 3'}],
-      [{s:'run-fl',t:'run',label:'FL – Fractionné long'}],
+      [{s:'mob-17a',t:'mob',label:'Protocole prévention'},{s:'gac1',t:'gac',label:'GAC 1 — Gainage global'}],
+      [{s:'run-fl',t:'run',label:'FL — Fractionné long'}],
       [{s:'wod2',t:'wod',label:'WOD 2'}],
-      [{s:'mob-17b',t:'mob',label:'Protocole prévention'}] ],
-    // Semaine 4
-    [ [{s:'plio',t:'plio',label:'Pliométrie'}],
-      [{s:'run-ef4-s4',t:'run',label:'EF 40 min'},{s:'gac4',t:'gac',label:'GAC 4'}],
+      [{s:'mob-17b',t:'mob',label:'Protocole prévention'}]
+    ],
+    [
+      [{s:'plio',t:'plio',label:'Pliométrie'}],
+      [{s:'run-ef4-s4',t:'run',label:'EF 40 min'},{s:'gac2',t:'gac',label:'GAC 2 — Anti-rotation'}],
       [{s:'rm4',t:'rm',label:'RM 4'}],
       [{s:'run-fl2',t:'run',label:'FL'}],
-      [{s:'mob-17a',t:'mob',label:'Protocole prévention'},{s:'gac4',t:'gac',label:'GAC 4'}],
+      [{s:'mob-17a',t:'mob',label:'Protocole prévention'},{s:'gac3',t:'gac',label:'GAC 3 — Flexion tronc'}],
       [{s:'vitesse',t:'wod',label:'Bloc vitesse/sprint'}],
-      [{s:'mob-17b',t:'mob',label:'Protocole prévention'}] ],
-    // Semaine 5
-    [ [{s:'plio',t:'plio',label:'Pliométrie'}],
-      [{s:'run-ef5-s5',t:'run',label:'EF 45 min'},{s:'gac5',t:'gac',label:'GAC 5'}],
+      [{s:'mob-17b',t:'mob',label:'Protocole prévention'}]
+    ],
+    [
+      [{s:'plio',t:'plio',label:'Pliométrie'}],
+      [{s:'run-ef5-s5',t:'run',label:'EF 45 min'},{s:'gac4',t:'gac',label:'GAC 4 — Chaîne croisée'}],
       [{s:'circuit-deload',t:'gac',label:'Circuit deload'}],
-      [{s:'run-fc',t:'run',label:'FC – Fractionné court'}],
-      [{s:'mob-17a',t:'mob',label:'Protocole prévention'},{s:'gac5',t:'gac',label:'GAC 5'}],
+      [{s:'run-fc',t:'run',label:'FC — Fractionné court'}],
+      [{s:'mob-17a',t:'mob',label:'Protocole prévention'},{s:'gac5',t:'gac',label:'GAC 5 — Stabilité dyn.'}],
       [{s:'vitesse',t:'wod',label:'Bloc vitesse/sprint'}],
-      [{s:'mob-17b',t:'mob',label:'Protocole prévention'}] ]
+      [{s:'mob-17b',t:'mob',label:'Protocole prévention'}]
+    ]
   ],
 
-  '15reg': [
-    // Semaine 1
-    [ [{s:'mob-a',t:'mob',label:'Protocole prévention'}],
-      [{s:'run-ef1-s1-reg',t:'run',label:'EF 20 min'},{s:'gac1',t:'gac',label:'GAC 1'}],
-      [{s:'gac1',t:'gac',label:'GAC 1'}],
+  '15reg':   [
+    [
+      [{s:'mob-a',t:'mob',label:'Protocole prévention'}],
+      [{s:'run-ef1-s1-reg',t:'run',label:'EF 20 min'},{s:'gac1',t:'gac',label:'GAC 1 — Gainage global'}],
+      [],
       [{s:'run-ef1-s1-reg',t:'run',label:'EF 20 min footing'}],
-      [{s:'gac1',t:'gac',label:'GAC 1'}],
-      [{s:'mob-b',t:'mob opt',label:'Protocole prévention (opt.)'}],
-      [{s:'rest',t:'rest',label:'OFF'}] ],
-    // Semaine 2
-    [ [{s:'mob-a',t:'mob',label:'Protocole prévention'}],
-      [{s:'run-ef2-s2-reg',t:'run',label:'EF 20–30 min'}],
+      [{s:'gac2',t:'gac',label:'GAC 2 — Anti-rotation'}],
+      [{s:'mob-a',t:'mob opt',label:'Protocole prévention (opt.)'}],
+      [{s:'rest',t:'rest',label:'OFF'}]
+    ],
+    [
+      [{s:'mob-a',t:'mob',label:'Protocole prévention'}],
+      [{s:'run-ef2-s2',t:'run',label:'EF 20–30 min'}],
       [{s:'rm1',t:'rm',label:'RM 1'}],
-      [{s:'mob-b',t:'mob',label:'Protocole prévention'},{s:'gac2',t:'gac',label:'GAC 2'}],
+      [{s:'mob-a',t:'mob',label:'Protocole prévention'},{s:'gac3',t:'gac',label:'GAC 3 — Flexion tronc'}],
       [{s:'rm2',t:'rm',label:'RM 2'}],
-      [{s:'mob-b',t:'mob opt',label:'Protocole prévention (opt.)'}],
-      [{s:'rest',t:'rest',label:'Off'}] ],
-    // Semaine 3
-    [ [{s:'wod1-reg',t:'wod',label:'WOD 1'}],
-      [{s:'run-ef3-s3-reg',t:'run',label:'EF 35 min'},{s:'gac3',t:'gac',label:'GAC 3'}],
+      [{s:'mob-a',t:'mob opt',label:'Protocole prévention (opt.)'},{s:'gac4',t:'gac',label:'GAC 4 — Chaîne croisée'}],
+      [{s:'rest',t:'rest',label:'OFF'}]
+    ],
+    [
+      [{s:'wod1-reg',t:'wod',label:'WOD 1'}],
+      [{s:'run-ef3-s3',t:'run',label:'EF 35 min'},{s:'gac5',t:'gac',label:'GAC 5 — Stabilité dyn.'}],
       [{s:'rm3',t:'rm',label:'RM 3'}],
-      [{s:'mob-a',t:'mob',label:'Protocole prévention'},{s:'gac3',t:'gac',label:'GAC 3'}],
-      [{s:'run-semi-fc',t:'run',label:'Run (semi)'}],
+      [{s:'mob-a',t:'mob',label:'Protocole prévention'},{s:'gac1',t:'gac',label:'GAC 1 — Gainage global'}],
+      [{s:'run-fsl',t:'run',label:'FSL'}],
       [{s:'wod2-reg',t:'wod opt',label:'WOD 2 (opt.)'}],
-      [{s:'mob-b',t:'mob opt',label:'Protocole prévention (opt.)'}] ],
-    // Semaine 4
-    [ [{s:'plio-reg',t:'plio',label:'Pliométrie'}],
-      [{s:'run-ef4-s4-reg',t:'run',label:'EF 40 min'},{s:'gac4',t:'gac',label:'GAC 4'}],
+      [{s:'mob-a',t:'mob opt',label:'Protocole prévention (opt.)'}]
+    ],
+    [
+      [{s:'plio-reg',t:'plio',label:'Pliométrie'}],
+      [{s:'run-ef4-s4',t:'run',label:'EF 40 min'},{s:'gac2',t:'gac',label:'GAC 2 — Anti-rotation'}],
       [{s:'rm4',t:'rm',label:'RM 4'}],
-      [{s:'run-semi-fc',t:'run',label:'Run (semi)'}],
-      [{s:'mob-a',t:'mob',label:'Protocole prévention'}],
+      [{s:'run-fl',t:'run',label:'FL — Fractionné long'}],
+      [{s:'mob-a',t:'mob',label:'Protocole prévention'},{s:'gac3',t:'gac',label:'GAC 3 — Flexion tronc'}],
       [{s:'vitesse-reg',t:'wod',label:'Bloc vitesse/sprint'}],
-      [{s:'mob-b',t:'mob',label:'Protocole prévention'}] ],
-    // Semaine 5
-    [ [{s:'plio-reg',t:'plio',label:'Pliométrie'}],
-      [{s:'run-ef5-s5-reg',t:'run',label:'EF 45 min'},{s:'gac5',t:'gac',label:'GAC 5'}],
+      [{s:'mob-a',t:'mob',label:'Protocole prévention'}]
+    ],
+    [
+      [{s:'plio-reg',t:'plio',label:'Pliométrie'}],
+      [{s:'run-ef5-s5',t:'run',label:'EF 45 min'},{s:'gac4',t:'gac',label:'GAC 4 — Chaîne croisée'}],
       [{s:'circuit-deload',t:'gac',label:'Circuit deload'}],
-      [{s:'run-semi-fl',t:'run',label:'FC / Seuil (semi)'}],
-      [{s:'mob-a',t:'mob',label:'Protocole prévention'}],
+      [{s:'run-fc',t:'run',label:'FC — Fractionné court'}],
+      [{s:'mob-a',t:'mob',label:'Protocole prévention'},{s:'gac5',t:'gac',label:'GAC 5 — Stabilité dyn.'}],
       [{s:'vitesse-reg',t:'wod',label:'Bloc vitesse/sprint'}],
-      [{s:'mob-b',t:'mob',label:'Protocole prévention'}] ]
+      [{s:'mob-a',t:'mob',label:'Protocole prévention'}]
+    ]
   ],
 
-  '15pole': [
-    // Semaine 1
-    [ [{s:'mob-a',t:'mob',label:'Protocole prévention'}],
-      [{s:'run-ef1-s1-reg',t:'run',label:'EF 20 min'},{s:'gac1',t:'gac',label:'GAC 1'}],
-      [{s:'gac1',t:'gac',label:'GAC 1'}],
+  '15pole':   [
+    [
+      [{s:'mob-a',t:'mob',label:'Protocole prévention'}],
+      [{s:'run-ef1-s1-reg',t:'run',label:'EF 20 min'},{s:'gac1',t:'gac',label:'GAC 1 — Gainage global'}],
+      [{s:'gac1',t:'gac',label:'GAC 1 — Gainage global'}],
       [{s:'run-ef1-s1-reg',t:'run',label:'EF 20 min footing'}],
-      [{s:'gac1',t:'gac',label:'GAC 1'}],
-      [{s:'mob-b',t:'mob opt',label:'Protocole prévention (opt.)'}],
-      [{s:'rest',t:'rest',label:'OFF'}] ],
-    // Semaine 2
-    [ [{s:'mob-a',t:'mob',label:'Protocole prévention'}],
-      [{s:'run-ef2-s2-reg',t:'run',label:'EF 20–30 min'}],
+      [{s:'gac2',t:'gac',label:'GAC 2 — Anti-rotation'}],
+      [{s:'mob-a',t:'mob opt',label:'Protocole prévention (opt.)'}],
+      [{s:'rest',t:'rest',label:'OFF'}]
+    ],
+    [
+      [{s:'mob-a',t:'mob',label:'Protocole prévention'}],
+      [{s:'run-ef2-s2',t:'run',label:'EF 20–30 min'}],
       [{s:'rm1',t:'rm',label:'RM 1'}],
-      [{s:'mob-b',t:'mob',label:'Protocole prévention'},{s:'gac2',t:'gac',label:'GAC 2'}],
+      [{s:'mob-a',t:'mob',label:'Protocole prévention'},{s:'gac3',t:'gac',label:'GAC 3 — Flexion tronc'}],
       [{s:'rm2',t:'rm',label:'RM 2'}],
-      [{s:'mob-b',t:'mob opt',label:'Protocole prévention (opt.)'}],
-      [{s:'rest',t:'rest',label:'Off'}] ],
-    // Semaine 3 (ou stage)
-    [ [{s:'wod1-reg',t:'wod',label:'WOD 1'}],
-      [{s:'run-ef3-s3-reg',t:'run',label:'EF 35 min'},{s:'gac3',t:'gac',label:'GAC 3'}],
+      [{s:'mob-a',t:'mob opt',label:'Protocole prévention (opt.)'},{s:'gac4',t:'gac',label:'GAC 4 — Chaîne croisée'}],
+      [{s:'rest',t:'rest',label:'OFF'}]
+    ],
+    [
+      [{s:'wod1-reg',t:'wod',label:'WOD 1'}],
+      [{s:'run-ef3-s3',t:'run',label:'EF 35 min'},{s:'gac5',t:'gac',label:'GAC 5 — Stabilité dyn.'}],
       [{s:'rm3',t:'rm',label:'RM 3'}],
-      [{s:'mob-a',t:'mob',label:'Protocole prévention'},{s:'gac3',t:'gac',label:'GAC 3'}],
-      [{s:'run-semi-fc',t:'run',label:'Run (objectif semi)'}],
+      [{s:'mob-a',t:'mob',label:'Protocole prévention'},{s:'gac1',t:'gac',label:'GAC 1 — Gainage global'}],
+      [{s:'run-fsl',t:'run',label:'FSL'}],
       [{s:'wod2-reg',t:'wod opt',label:'WOD 2 (opt.)'}],
-      [{s:'mob-b',t:'mob opt',label:'Protocole prévention (opt.)'}] ],
-    // Semaine 4
-    [ [{s:'plio-reg',t:'plio',label:'Pliométrie'}],
-      [{s:'run-ef4-s4-reg',t:'run',label:'EF 40 min'},{s:'gac4',t:'gac',label:'GAC 4'}],
+      [{s:'mob-a',t:'mob opt',label:'Protocole prévention (opt.)'}]
+    ],
+    [
+      [{s:'plio-reg',t:'plio',label:'Pliométrie'}],
+      [{s:'run-ef4-s4',t:'run',label:'EF 40 min'},{s:'gac2',t:'gac',label:'GAC 2 — Anti-rotation'}],
       [{s:'rm4',t:'rm',label:'RM 4'}],
-      [{s:'run-semi-fc',t:'run',label:'Run (objectif semi)'}],
-      [{s:'mob-a',t:'mob',label:'Protocole prévention'}],
+      [{s:'run-fl',t:'run',label:'FL — Fractionné long'}],
+      [{s:'mob-a',t:'mob',label:'Protocole prévention'},{s:'gac3',t:'gac',label:'GAC 3 — Flexion tronc'}],
       [{s:'vitesse-reg',t:'wod',label:'Bloc vitesse/sprint'}],
-      [{s:'mob-b',t:'mob',label:'Protocole prévention'}] ],
-    // Semaine 5
-    [ [{s:'plio-reg',t:'plio',label:'Pliométrie'}],
-      [{s:'run-ef5-s5-reg',t:'run',label:'EF 45 min'},{s:'gac5',t:'gac',label:'GAC 5'}],
+      [{s:'mob-a',t:'mob',label:'Protocole prévention'}]
+    ],
+    [
+      [{s:'plio-reg',t:'plio',label:'Pliométrie'}],
+      [{s:'run-ef5-s5',t:'run',label:'EF 45 min'},{s:'gac4',t:'gac',label:'GAC 4 — Chaîne croisée'}],
       [{s:'circuit-deload',t:'gac',label:'Circuit deload'}],
-      [{s:'run-semi-fl',t:'run',label:'FC / Seuil (objectif semi)'}],
-      [{s:'mob-a',t:'mob',label:'Protocole prévention'}],
+      [{s:'run-fc',t:'run',label:'FC — Fractionné court'}],
+      [{s:'mob-a',t:'mob',label:'Protocole prévention'},{s:'gac5',t:'gac',label:'GAC 5 — Stabilité dyn.'}],
       [{s:'vitesse-reg',t:'wod',label:'Bloc vitesse/sprint'}],
-      [{s:'mob-b',t:'mob',label:'Protocole prévention'}] ]
+      [{s:'mob-a',t:'mob',label:'Protocole prévention'}]
+    ]
   ]
 };
 
-// =====================================================================
-// CONTENU DES SÉANCES
-// =====================================================================
 const SESSIONS = {
 
   // ---- ÉCHAUFFEMENT RUN (commun) ----
@@ -389,8 +401,8 @@ const SESSIONS = {
     <div class="session-block-title">🔥 Échauffement musculaire / articulaire pré-run (10 min)</div>
     <table class="exo-table"><thead><tr><th>Exercice</th><th>Séries</th><th>Reps</th><th>Récup</th><th>Explications</th></tr></thead><tbody>
     <tr><td>Étirement fessier / psoas / cheville</td><td>2</td><td>30"/30"</td><td>/</td><td>Pied sur une hauteur, avancer le bassin vers l'avant sans décoller le talon (dynamique)</td></tr>
-    <tr><td>90/90 hanches<a class="vid-btn" href="https://www.youtube.com/shorts/25OaAr09j_U" target="_blank">Vidéo</a></td><td>2</td><td>20"</td><td>10"</td><td>90° d'angulation des genoux, aller d'un côté puis de l'autre en gardant les pieds au sol</td></tr>
-    <tr><td>Superman<a class="vid-btn" href="https://www.youtube.com/shorts/Ao8mSuQ01Dk" target="_blank">Vidéo</a></td><td>2</td><td>20"</td><td>10"</td><td>À plat ventre, bras et jambes tendus, mouvement vers le haut (dynamique)</td></tr>
+    <tr><td>90/90 hanches<a class="vid-btn" href="https://youtube.com/shorts/25OaAr09j_U" target="_blank">Vidéo</a></td><td>2</td><td>20"</td><td>10"</td><td>90° d'angulation des genoux, aller d'un côté puis de l'autre en gardant les pieds au sol</td></tr>
+    <tr><td>Superman<a class="vid-btn" href="https://youtube.com/shorts/Ao8mSuQ01Dk" target="_blank">Vidéo</a></td><td>2</td><td>20"</td><td>10"</td><td>À plat ventre, bras et jambes tendus, mouvement vers le haut (dynamique)</td></tr>
     <tr><td>Balancier de jambe latéral</td><td>2</td><td>20"</td><td>10"</td><td>Balancer la jambe vers l'extérieur puis vers l'intérieur en dynamique</td></tr>
     <tr><td>Balancier de jambe frontal</td><td>2</td><td>20"</td><td>10"</td><td>Balancer la jambe vers l'avant puis vers l'arrière en dynamique</td></tr>
     <tr><td>Montée de genoux déroulé</td><td>2</td><td>15–20m</td><td>/</td><td>Montée de genoux au ralenti, dérouler la jambe vers l'avant en montant sur pointe de pieds</td></tr>
@@ -405,7 +417,7 @@ const SESSIONS = {
     <tr><td>Montée de genoux 2 jambes</td><td>1</td><td>15–20m</td><td>Les deux font montée de genoux</td></tr>
     <tr><td>Talons fesses unilatéral</td><td>2</td><td>15–20m</td><td>Une jambe talon-fesse, l'autre tendue</td></tr>
     <tr><td>Talons fesses 2 jambes</td><td>1</td><td>15–20m</td><td>Les deux font talons-fesses</td></tr>
-    <tr><td>Jambes tendues dynamiques<a class="vid-btn" href="https://www.youtube.com/shorts/Ao8mSuQ01Dk" target="_blank">Vidéo</a></td><td>2</td><td>15–20m</td><td>Max d'appuis dynamiques, pas loin mais vite</td></tr>
+    <tr><td>Jambes tendues dynamiques<a class="vid-btn" href="https://youtube.com/shorts/Ao8mSuQ01Dk" target="_blank">Vidéo</a></td><td>2</td><td>15–20m</td><td>Max d'appuis dynamiques, pas loin mais vite</td></tr>
     <tr><td>Accélérations progressives</td><td>3</td><td>30m</td><td>Jamais à 100% — accélération progressive</td></tr>
     </tbody></table>
     <div class="img-grid" id="wu-run-gammes-imgs" style="margin-top:10px;">
@@ -1041,9 +1053,9 @@ const SESSIONS = {
       <span style="font-size:.8rem;color:#aaa;line-height:1.4;">tours<br><span style="color:#888;font-size:.72rem;">30" travail · 1' récup entre chaque tour</span></span>
     </div>
     <table class="exo-table"><thead><tr><th>Exercice</th><th style="text-align:center;width:60px;">Tours</th><th>Durée</th><th>Explications</th></tr></thead><tbody>
-    <tr><td><strong>Hollow Hold</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=znXz0tkcUZY" target="_blank">Vidéo</a></td><td rowspan="4" style="text-align:center;vertical-align:middle;font-family:'Barlow Condensed',sans-serif;font-size:2.2rem;font-weight:900;color:#a855f7;">5</td><td>30"</td><td>Banane — bras et jambes tendus, rentrer les abdos, ne pas creuser le dos</td></tr>
+    <tr><td><strong>Hollow Hold</strong><a class="vid-btn" href="https://www.youtube.com/shorts/YHBp6fvXYcI" target="_blank">Vidéo</a></td><td rowspan="4" style="text-align:center;vertical-align:middle;font-family:'Barlow Condensed',sans-serif;font-size:2.2rem;font-weight:900;color:#a855f7;">5</td><td>30"</td><td>Banane — bras et jambes tendus, rentrer les abdos, ne pas creuser le dos</td></tr>
     <tr><td><strong>Arch Hold</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=wQdKFbKKjcI" target="_blank">Vidéo</a></td><td>30"</td><td>Superman bras tendus — dos creusé, 4 membres levés et tendus</td></tr>
-    <tr><td><strong>Scapular Push Up</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=t2F0f31Ujro" target="_blank">Vidéo</a></td><td>30"</td><td>Position planche, pousser les omoplates vers le bas puis vers le haut sans fléchir les coudes</td></tr>
+    <tr><td><strong>Scapular Push Up</strong><a class="vid-btn" href="https://www.youtube.com/shorts/SBPRhZI2RkI" target="_blank">Vidéo</a></td><td>30"</td><td>Position planche, pousser les omoplates vers le bas puis vers le haut sans fléchir les coudes</td></tr>
     <tr><td><strong>Gainage de face</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=xLHNdFQSE6g" target="_blank">Vidéo</a></td><td>30"</td><td>Épaules pas trop en avant, rétroversion du bassin, contracter abdos et fessiers</td></tr>
     </tbody></table>
   </div>`,
@@ -1057,9 +1069,9 @@ const SESSIONS = {
       <span style="font-size:.8rem;color:#aaa;line-height:1.4;">tours<br><span style="color:#888;font-size:.72rem;">30" travail · 1' récup entre chaque tour</span></span>
     </div>
     <table class="exo-table"><thead><tr><th>Exercice</th><th style="text-align:center;width:60px;">Tours</th><th>Durée</th><th>Explications</th></tr></thead><tbody>
-    <tr><td><strong>Pallof Press en fente genou au sol</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=cDvRJcQNT-Q" target="_blank">Vidéo</a></td><td rowspan="4" style="text-align:center;vertical-align:middle;font-family:'Barlow Condensed',sans-serif;font-size:2.2rem;font-weight:900;color:#a855f7;">5</td><td>30"</td><td>En fente genou au sol, élastique, pousser dans l'alignement du corps, épaules basses — résister à la rotation</td></tr>
-    <tr><td><strong>Russian Twist</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=u4C44NMmc60" target="_blank">Vidéo</a></td><td>30"</td><td>Aller chercher au maximum sur les côtés, amplitude complète</td></tr>
-    <tr><td><strong>KB Plank</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=XuDIQSqYM2w" target="_blank">Vidéo</a></td><td>30"</td><td>Gainage de face, déplacer un poids d'un côté à l'autre sans bouger le bassin</td></tr>
+    <tr><td><strong>Pallof Press en fente genou au sol</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=6mzCc1ULFV8" target="_blank">Vidéo</a></td><td rowspan="4" style="text-align:center;vertical-align:middle;font-family:'Barlow Condensed',sans-serif;font-size:2.2rem;font-weight:900;color:#a855f7;">5</td><td>30"</td><td>En fente genou au sol, élastique, pousser dans l'alignement du corps, épaules basses — résister à la rotation</td></tr>
+    <tr><td><strong>Russian Twist</strong><a class="vid-btn" href="https://www.youtube.com/shorts/rkuhF7D1iyI" target="_blank">Vidéo</a></td><td>30"</td><td>Aller chercher au maximum sur les côtés, amplitude complète</td></tr>
+    <tr><td><strong>KB Plank</strong><a class="vid-btn" href="https://www.youtube.com/shorts/xedTgMxPG5g" target="_blank">Vidéo</a></td><td>30"</td><td>Gainage de face, déplacer un poids d'un côté à l'autre sans bouger le bassin</td></tr>
     <tr><td><strong>Gainage rotation bassin</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=bYL97aKvOEQ" target="_blank">Vidéo</a></td><td>30"</td><td>Gainage de face + rotation du bassin vers le sol alternativement, haut du corps fixe</td></tr>
     </tbody></table>
   </div>`,
@@ -1075,7 +1087,7 @@ const SESSIONS = {
     <table class="exo-table"><thead><tr><th>Exercice</th><th style="text-align:center;width:60px;">Tours</th><th>Durée</th><th>Explications</th></tr></thead><tbody>
     <tr><td><strong>Sit-up</strong><a class="vid-btn" href="https://www.youtube.com/shorts/SDE4nWuDCZs" target="_blank">Vidéo</a></td><td rowspan="4" style="text-align:center;vertical-align:middle;font-family:'Barlow Condensed',sans-serif;font-size:2.2rem;font-weight:900;color:#a855f7;">5</td><td>30"</td><td>Crunch avec élévation complète du buste pour toucher les pieds</td></tr>
     <tr><td><strong>Crunch rameur</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=avsDyEtfiF4" target="_blank">Vidéo</a></td><td>30"</td><td>Si déséquilibre, poser les mains sans mettre tout le poids (garder la linéarité)</td></tr>
-    <tr><td><strong>Relevé de jambes</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=hrPMtl3cAos" target="_blank">Vidéo</a></td><td>30"</td><td>Talon qui touche le sol, jambes montent perpendiculaires au corps — contrôle lombaire</td></tr>
+    <tr><td><strong>Relevé de jambes</strong><a class="vid-btn" href="https://www.youtube.com/shorts/whPA9Km-Kfk" target="_blank">Vidéo</a></td><td>30"</td><td>Talon qui touche le sol, jambes montent perpendiculaires au corps — contrôle lombaire</td></tr>
     <tr><td><strong>V-up</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=7UVgs18Y1P4" target="_blank">Vidéo</a></td><td>30"</td><td>En position banane, toucher les pieds avec les mains — "on se plie"</td></tr>
     </tbody></table>
   </div>`,
@@ -1090,8 +1102,8 @@ const SESSIONS = {
     </div>
     <table class="exo-table"><thead><tr><th>Exercice</th><th style="text-align:center;width:60px;">Tours</th><th>Durée</th><th>Explications</th></tr></thead><tbody>
     <tr><td><strong>Bicycle Crunches</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=eqg47ZuGZXQ" target="_blank">Vidéo</a></td><td rowspan="4" style="text-align:center;vertical-align:middle;font-family:'Barlow Condensed',sans-serif;font-size:2.2rem;font-weight:900;color:#a855f7;">5</td><td>30"</td><td>Crunch en croisant coudes et épaules opposées — coordination diagonale</td></tr>
-    <tr><td><strong>Mountain Climbers</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=34G7X0QtQuY" target="_blank">Vidéo</a></td><td>30"</td><td>Gainage de face, monter les genoux dynamiquement vers l'épaule opposée (croisé)</td></tr>
-    <tr><td><strong>Pallof Press + rotation</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=77849r24_wY" target="_blank">Vidéo</a></td><td>30"</td><td>Debout, extension du coude + rotation du buste à l'opposé de l'élastique</td></tr>
+    <tr><td><strong>Mountain Climbers</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=kLh-uczlPLg" target="_blank">Vidéo</a></td><td>30"</td><td>Gainage de face, monter les genoux dynamiquement vers l'épaule opposée (croisé)</td></tr>
+    <tr><td><strong>Pallof Press + rotation</strong><a class="vid-btn" href="https://www.youtube.com/shorts/iAWKyMczcrs" target="_blank">Vidéo</a></td><td>30"</td><td>Debout, extension du coude + rotation du buste à l'opposé de l'élastique</td></tr>
     <tr><td><strong>Oblique toucher de chevilles</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=4q1l3FqPbu0" target="_blank">Vidéo</a></td><td>30"</td><td>Omoplates surélevées, rotation du buste pour toucher les chevilles alternativement</td></tr>
     </tbody></table>
   </div>`,
@@ -1105,9 +1117,9 @@ const SESSIONS = {
       <span style="font-size:.8rem;color:#aaa;line-height:1.4;">tours<br><span style="color:#888;font-size:.72rem;">30" travail · 1' récup entre chaque tour</span></span>
     </div>
     <table class="exo-table"><thead><tr><th>Exercice</th><th style="text-align:center;width:60px;">Tours</th><th>Durée</th><th>Explications</th></tr></thead><tbody>
-    <tr><td><strong>Gainage commando</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=vkY4KUa_msM" target="_blank">Vidéo</a></td><td rowspan="4" style="text-align:center;vertical-align:middle;font-family:'Barlow Condensed',sans-serif;font-size:2.2rem;font-weight:900;color:#a855f7;">5</td><td>30"</td><td>Planche dynamique — passer des coudes aux mains sans bouger le bassin, abdos engagés</td></tr>
+    <tr><td><strong>Gainage commando</strong><a class="vid-btn" href="https://www.youtube.com/shorts/EUqNNmAy0yY" target="_blank">Vidéo</a></td><td rowspan="4" style="text-align:center;vertical-align:middle;font-family:'Barlow Condensed',sans-serif;font-size:2.2rem;font-weight:900;color:#a855f7;">5</td><td>30"</td><td>Planche dynamique — passer des coudes aux mains sans bouger le bassin, abdos engagés</td></tr>
     <tr><td><strong>Bear Plank</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=VaoNT0BLTqw" target="_blank">Vidéo</a></td><td>30"</td><td>Gainage sur mains, genoux pliés décollés du sol, tête alignée avec la colonne</td></tr>
-    <tr><td><strong>Russian Twist</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=u4C44NMmc60" target="_blank">Vidéo</a></td><td>30"</td><td>Aller chercher au maximum sur les côtés — amplitude + contrôle sous fatigue</td></tr>
+    <tr><td><strong>Russian Twist</strong><a class="vid-btn" href="https://www.youtube.com/shorts/rkuhF7D1iyI" target="_blank">Vidéo</a></td><td>30"</td><td>Aller chercher au maximum sur les côtés — amplitude + contrôle sous fatigue</td></tr>
     <tr><td><strong>Bicycle Crunches</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=eqg47ZuGZXQ" target="_blank">Vidéo</a></td><td>30"</td><td>Crunch en croisant coudes et épaules opposées — maintenir la vitesse jusqu'à la fin</td></tr>
     </tbody></table>
   </div>`,
@@ -1128,7 +1140,7 @@ const SESSIONS = {
     <tr><td>Squat</td><td>10</td></tr>
     <tr><td>Front plank</td><td>20"</td></tr>
     <tr><td>Forward lunge</td><td>8/c</td></tr>
-    <tr><td>Russian twist<a class="vid-btn" href="https://www.youtube.com/watch?v=u4C44NMmc60" target="_blank">Vidéo</a></td><td>8/c</td></tr>
+    <tr><td>Russian twist<a class="vid-btn" href="https://www.youtube.com/shorts/rkuhF7D1iyI" target="_blank">Vidéo</a></td><td>8/c</td></tr>
     <tr><td>Push-up<a class="vid-btn" href="https://www.youtube.com/shorts/n8PJC6yo_1o" target="_blank">Vidéo</a></td><td>10</td></tr>
     <tr><td>Sit-up<a class="vid-btn" href="https://www.youtube.com/shorts/SDE4nWuDCZs" target="_blank">Vidéo</a></td><td>20</td></tr>
     <tr><td>Corde à sauter / pogo</td><td>50</td></tr>
@@ -1154,7 +1166,7 @@ const SESSIONS = {
     <div class="session-block"><div class="session-block-title"><span class="tag tag-wod">WOD 1</span> AMRAP 12' · −15 Régions/Pôle · S3</div>
     <table class="exo-table"><thead><tr><th>Exercice</th><th>Reps</th></tr></thead><tbody>
     <tr><td>Burpees<a class="vid-btn" href="https://www.youtube.com/shorts/YqsD_xnzrZE" target="_blank">Vidéo</a></td><td>6</td></tr><tr><td>Squat jump<a class="vid-btn" href="https://www.youtube.com/shorts/KDEMcsQnUq0" target="_blank">Vidéo</a></td><td>10</td></tr><tr><td>Front plank</td><td>20"</td></tr>
-    <tr><td>Forward lunge</td><td>8/c</td></tr><tr><td>Russian twist<a class="vid-btn" href="https://www.youtube.com/watch?v=u4C44NMmc60" target="_blank">Vidéo</a></td><td>8/c</td></tr>
+    <tr><td>Forward lunge</td><td>8/c</td></tr><tr><td>Russian twist<a class="vid-btn" href="https://www.youtube.com/shorts/rkuhF7D1iyI" target="_blank">Vidéo</a></td><td>8/c</td></tr>
     <tr><td>Push-up<a class="vid-btn" href="https://www.youtube.com/shorts/n8PJC6yo_1o" target="_blank">Vidéo</a></td><td>10</td></tr><tr><td>Sit-up<a class="vid-btn" href="https://www.youtube.com/shorts/SDE4nWuDCZs" target="_blank">Vidéo</a></td><td>20</td></tr><tr><td>Pogo jump<a class="vid-btn" href="https://www.youtube.com/shorts/SjHRwhGXBl8" target="_blank">Vidéo</a></td><td>50</td></tr>
     </tbody></table></div>`,
 
@@ -1171,7 +1183,7 @@ const SESSIONS = {
     <tr><td>Forward lunge</td><td>8/c</td><td>Contrôlé, pas de charge</td></tr>
     <tr><td>Scapular push up</td><td>10</td><td>Amplitude complète</td></tr>
     <tr><td>Hollow hold</td><td>20"</td><td>Maintien aisé</td></tr>
-    <tr><td>Russian twist<a class="vid-btn" href="https://www.youtube.com/watch?v=u4C44NMmc60" target="_blank">Vidéo</a></td><td>8/c</td><td>Léger</td></tr>
+    <tr><td>Russian twist<a class="vid-btn" href="https://www.youtube.com/shorts/rkuhF7D1iyI" target="_blank">Vidéo</a></td><td>8/c</td><td>Léger</td></tr>
     </tbody></table></div>`,
 
   // ---- PLIOMÉTRIE ----
@@ -1184,8 +1196,8 @@ const SESSIONS = {
       <div style="font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--wu);margin-bottom:8px;">🔥 Échauffement musculaire (10 min)</div>
       <table class="exo-table"><thead><tr><th>Exercice</th><th>Séries</th><th>Reps</th><th>Récup</th><th>Explications</th></tr></thead><tbody>
       <tr><td>Étirement fessier / psoas / cheville</td><td>2</td><td>30"/30"</td><td>/</td><td>Pied sur une hauteur, avancer le bassin vers l'avant sans décoller le talon (dynamique)</td></tr>
-      <tr><td>90/90 hanches<a class="vid-btn" href="https://www.youtube.com/shorts/25OaAr09j_U" target="_blank">Vidéo</a></td><td>2</td><td>20"</td><td>10"</td><td>90° d'angulation des genoux, aller d'un côté puis de l'autre en gardant les pieds au sol</td></tr>
-      <tr><td>Superman<a class="vid-btn" href="https://www.youtube.com/shorts/Ao8mSuQ01Dk" target="_blank">Vidéo</a></td><td>2</td><td>20"</td><td>10"</td><td>À plat ventre, bras et jambes tendus, mouvement vers le haut (dynamique)</td></tr>
+      <tr><td>90/90 hanches<a class="vid-btn" href="https://youtube.com/shorts/25OaAr09j_U" target="_blank">Vidéo</a></td><td>2</td><td>20"</td><td>10"</td><td>90° d'angulation des genoux, aller d'un côté puis de l'autre en gardant les pieds au sol</td></tr>
+      <tr><td>Superman<a class="vid-btn" href="https://youtube.com/shorts/Ao8mSuQ01Dk" target="_blank">Vidéo</a></td><td>2</td><td>20"</td><td>10"</td><td>À plat ventre, bras et jambes tendus, mouvement vers le haut (dynamique)</td></tr>
       <tr><td>Balancier de jambe latéral</td><td>2</td><td>20"</td><td>10"</td><td>Balancer la jambe vers l'extérieur puis vers l'intérieur en dynamique</td></tr>
       <tr><td>Balancier de jambe frontal</td><td>2</td><td>20"</td><td>10"</td><td>Balancer la jambe vers l'avant puis vers l'arrière en dynamique</td></tr>
       </tbody></table>
@@ -1198,24 +1210,24 @@ const SESSIONS = {
     <div style="margin-bottom:16px;margin-top:14px;">
       <div style="font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--must);margin-bottom:8px;">👟 Travail de pieds (15 min)</div>
       <table class="exo-table"><thead><tr><th>Exercice</th><th>Séries</th><th>Durée</th><th>Récup</th><th>Explications</th><th>Vidéo</th></tr></thead><tbody>
-      <tr><td><strong>Reactive SL jump</strong></td><td>2</td><td>15"/c</td><td>30"</td><td>Appuis sur une hauteur, puis au sol de façon dynamique — réactivité maximale</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/0XgyS3LfjsY" target="_blank">Vidéo</a></td></tr>
-      <tr><td><strong>Rapid front scissors</strong></td><td>2</td><td>20"</td><td>40"</td><td>Mini-bande aux chevilles, appuis décalés avant/arrière en dynamique</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/6Bseog4N3Hk" target="_blank">Vidéo</a></td></tr>
-      <tr><td><strong>Rapid lateral scissors</strong></td><td>2</td><td>20"</td><td>40"</td><td>Mini-bande aux chevilles, appuis latéraux dynamiques</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/IEQLnrTY0DE" target="_blank">Vidéo</a></td></tr>
-      <tr><td><strong>Dynamic front step up + mini-band</strong></td><td>2</td><td>20"</td><td>40"</td><td>Mini-bande aux chevilles, appuis décalés avant/arrière sur marche — amplitude dynamique</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/eB3iDsPOf6g" target="_blank">Vidéo</a></td></tr>
-      <tr><td><strong>Alternate step up + step back + lateral jump (mini-band)</strong></td><td>2</td><td>20"</td><td>40"</td><td>Saut sur hauteur d'une jambe, descente même pied, saut latéral — réception contrôlée</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/B6ogaBoDnZE" target="_blank">Vidéo</a></td></tr>
-      <tr><td><strong>Tap to box dynamic (mini-band)</strong></td><td>2</td><td>20"</td><td>40"</td><td>Toucher alternativement la hauteur avec chaque pied, contacts rapides et dynamiques</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/w_s4v-hJ6hA" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>Reactive SL jump</strong></td><td>2</td><td>15"/c</td><td>30"</td><td>Appuis sur une hauteur, puis au sol de façon dynamique — réactivité maximale</td><td><a class="vid-btn" href="https://youtube.com/shorts/0XgyS3LfjsY" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>Rapid front scissors</strong></td><td>2</td><td>20"</td><td>40"</td><td>Mini-bande aux chevilles, appuis décalés avant/arrière en dynamique</td><td><a class="vid-btn" href="https://youtube.com/shorts/6Bseog4N3Hk" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>Rapid lateral scissors</strong></td><td>2</td><td>20"</td><td>40"</td><td>Mini-bande aux chevilles, appuis latéraux dynamiques</td><td><a class="vid-btn" href="https://youtube.com/shorts/IEQLnrTY0DE" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>Dynamic front step up + mini-band</strong></td><td>2</td><td>20"</td><td>40"</td><td>Mini-bande aux chevilles, appuis décalés avant/arrière sur marche — amplitude dynamique</td><td><a class="vid-btn" href="https://youtube.com/shorts/eB3iDsPOf6g" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>Alternate step up + step back + lateral jump (mini-band)</strong></td><td>2</td><td>20"</td><td>40"</td><td>Saut sur hauteur d'une jambe, descente même pied, saut latéral — réception contrôlée</td><td><a class="vid-btn" href="https://youtube.com/shorts/B6ogaBoDnZE" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>Tap to box dynamic (mini-band)</strong></td><td>2</td><td>20"</td><td>40"</td><td>Toucher alternativement la hauteur avec chaque pied, contacts rapides et dynamiques</td><td><a class="vid-btn" href="https://youtube.com/shorts/w_s4v-hJ6hA" target="_blank">Vidéo</a></td></tr>
       </tbody></table>
     </div>
 
     <div style="margin-bottom:16px;">
       <div style="font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#ef4444;margin-bottom:8px;">💥 Pliométrie (20 min)</div>
       <table class="exo-table"><thead><tr><th>Exercice</th><th>Séries</th><th>Reps</th><th>Récup</th><th>Explications</th><th>Vidéo</th></tr></thead><tbody>
-      <tr><td><strong>Dynamic step up (plate + mini-band)</strong></td><td>2</td><td>10/c</td><td>1'</td><td>Position genoux hauts avec mini-bande milieu de pieds — dynamisme et hauteur de genou</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/BG_G2UUedTc" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>Dynamic step up (plate + mini-band)</strong></td><td>2</td><td>10/c</td><td>1'</td><td>Position genoux hauts avec mini-bande milieu de pieds — dynamisme et hauteur de genou</td><td><a class="vid-btn" href="https://youtube.com/shorts/BG_G2UUedTc" target="_blank">Vidéo</a></td></tr>
       <tr><td colspan="6" style="background:rgba(201,162,39,.06);color:var(--must);font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:6px 10px;">⚡ Bi-set — 3 séries · 2' récup</td></tr>
       <tr><td><strong>Chaise / Killy</strong></td><td>3</td><td>30"</td><td>2'</td><td>Dos contre un mur, genoux à 90° — position statique tenue</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/2AvcPstdm2Q" target="_blank">Vidéo</a></td></tr>
       <tr><td><strong>Box jump</strong></td><td>3</td><td>5</td><td>—</td><td>Saut sur hauteur — extension complète à la réception, attention à la descente</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/hDiQD4xhVDw" target="_blank">Vidéo</a></td></tr>
-      <tr><td><strong>Lateral power step up</strong></td><td>3</td><td>20"/c</td><td>1'</td><td>Pas chassé sur hauteur — prendre une hauteur permettant de faire l'exercice correctement</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/HPH_xcraIHM" target="_blank">Vidéo</a></td></tr>
-      <tr><td><strong>Sprint power step up</strong></td><td>3</td><td>6/c</td><td>1'30–2'</td><td>Départ fente, jambe genou au sol vient faire la réception sur la box, genou monte haut</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/XT4gnmIR9p0" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>Lateral power step up</strong></td><td>3</td><td>20"/c</td><td>1'</td><td>Pas chassé sur hauteur — prendre une hauteur permettant de faire l'exercice correctement</td><td><a class="vid-btn" href="https://youtube.com/shorts/HPH_xcraIHM" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>Sprint power step up</strong></td><td>3</td><td>6/c</td><td>1'30–2'</td><td>Départ fente, jambe genou au sol vient faire la réception sur la box, genou monte haut</td><td><a class="vid-btn" href="https://youtube.com/shorts/XT4gnmIR9p0" target="_blank">Vidéo</a></td></tr>
       </tbody></table>
     </div>
   </div>`,
@@ -1229,8 +1241,8 @@ const SESSIONS = {
       <div style="font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--wu);margin-bottom:8px;">🔥 Échauffement musculaire (10 min)</div>
       <table class="exo-table"><thead><tr><th>Exercice</th><th>Séries</th><th>Reps</th><th>Récup</th><th>Explications</th></tr></thead><tbody>
       <tr><td>Étirement fessier / psoas / cheville</td><td>2</td><td>30"/30"</td><td>/</td><td>Pied sur une hauteur, avancer le bassin vers l'avant sans décoller le talon (dynamique)</td></tr>
-      <tr><td>90/90 hanches<a class="vid-btn" href="https://www.youtube.com/shorts/25OaAr09j_U" target="_blank">Vidéo</a></td><td>2</td><td>20"</td><td>10"</td><td>90° d'angulation des genoux, aller d'un côté puis de l'autre en gardant les pieds au sol</td></tr>
-      <tr><td>Superman<a class="vid-btn" href="https://www.youtube.com/shorts/Ao8mSuQ01Dk" target="_blank">Vidéo</a></td><td>2</td><td>20"</td><td>10"</td><td>À plat ventre, bras et jambes tendus, mouvement vers le haut (dynamique)</td></tr>
+      <tr><td>90/90 hanches<a class="vid-btn" href="https://youtube.com/shorts/25OaAr09j_U" target="_blank">Vidéo</a></td><td>2</td><td>20"</td><td>10"</td><td>90° d'angulation des genoux, aller d'un côté puis de l'autre en gardant les pieds au sol</td></tr>
+      <tr><td>Superman<a class="vid-btn" href="https://youtube.com/shorts/Ao8mSuQ01Dk" target="_blank">Vidéo</a></td><td>2</td><td>20"</td><td>10"</td><td>À plat ventre, bras et jambes tendus, mouvement vers le haut (dynamique)</td></tr>
       <tr><td>Balancier de jambe latéral</td><td>2</td><td>20"</td><td>10"</td><td>Balancer la jambe vers l'extérieur puis vers l'intérieur en dynamique</td></tr>
       <tr><td>Balancier de jambe frontal</td><td>2</td><td>20"</td><td>10"</td><td>Balancer la jambe vers l'avant puis vers l'arrière en dynamique</td></tr>
       </tbody></table>
@@ -1243,24 +1255,24 @@ const SESSIONS = {
     <div style="margin-bottom:16px;margin-top:14px;">
       <div style="font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--must);margin-bottom:8px;">👟 Travail de pieds (15 min)</div>
       <table class="exo-table"><thead><tr><th>Exercice</th><th>Séries</th><th>Durée</th><th>Récup</th><th>Explications</th><th>Vidéo</th></tr></thead><tbody>
-      <tr><td><strong>Reactive SL jump</strong></td><td>2</td><td>15"/c</td><td>30"</td><td>Appuis sur une hauteur, puis au sol de façon dynamique — réactivité maximale</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/0XgyS3LfjsY" target="_blank">Vidéo</a></td></tr>
-      <tr><td><strong>Rapid front scissors</strong></td><td>2</td><td>20"</td><td>40"</td><td>Mini-bande aux chevilles, appuis décalés avant/arrière en dynamique</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/6Bseog4N3Hk" target="_blank">Vidéo</a></td></tr>
-      <tr><td><strong>Rapid lateral scissors</strong></td><td>2</td><td>20"</td><td>40"</td><td>Mini-bande aux chevilles, appuis latéraux dynamiques</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/IEQLnrTY0DE" target="_blank">Vidéo</a></td></tr>
-      <tr><td><strong>Dynamic front step up + mini-band</strong></td><td>2</td><td>20"</td><td>40"</td><td>Mini-bande aux chevilles, appuis décalés avant/arrière sur marche — amplitude dynamique</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/eB3iDsPOf6g" target="_blank">Vidéo</a></td></tr>
-      <tr><td><strong>Alternate step up + step back + lateral jump (mini-band)</strong></td><td>2</td><td>20"</td><td>40"</td><td>Saut sur hauteur d'une jambe, descente même pied, saut latéral — réception contrôlée</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/B6ogaBoDnZE" target="_blank">Vidéo</a></td></tr>
-      <tr><td><strong>Tap to box dynamic (mini-band)</strong></td><td>2</td><td>20"</td><td>40"</td><td>Toucher alternativement la hauteur avec chaque pied, contacts rapides et dynamiques</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/w_s4v-hJ6hA" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>Reactive SL jump</strong></td><td>2</td><td>15"/c</td><td>30"</td><td>Appuis sur une hauteur, puis au sol de façon dynamique — réactivité maximale</td><td><a class="vid-btn" href="https://youtube.com/shorts/0XgyS3LfjsY" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>Rapid front scissors</strong></td><td>2</td><td>20"</td><td>40"</td><td>Mini-bande aux chevilles, appuis décalés avant/arrière en dynamique</td><td><a class="vid-btn" href="https://youtube.com/shorts/6Bseog4N3Hk" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>Rapid lateral scissors</strong></td><td>2</td><td>20"</td><td>40"</td><td>Mini-bande aux chevilles, appuis latéraux dynamiques</td><td><a class="vid-btn" href="https://youtube.com/shorts/IEQLnrTY0DE" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>Dynamic front step up + mini-band</strong></td><td>2</td><td>20"</td><td>40"</td><td>Mini-bande aux chevilles, appuis décalés avant/arrière sur marche — amplitude dynamique</td><td><a class="vid-btn" href="https://youtube.com/shorts/eB3iDsPOf6g" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>Alternate step up + step back + lateral jump (mini-band)</strong></td><td>2</td><td>20"</td><td>40"</td><td>Saut sur hauteur d'une jambe, descente même pied, saut latéral — réception contrôlée</td><td><a class="vid-btn" href="https://youtube.com/shorts/B6ogaBoDnZE" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>Tap to box dynamic (mini-band)</strong></td><td>2</td><td>20"</td><td>40"</td><td>Toucher alternativement la hauteur avec chaque pied, contacts rapides et dynamiques</td><td><a class="vid-btn" href="https://youtube.com/shorts/w_s4v-hJ6hA" target="_blank">Vidéo</a></td></tr>
       </tbody></table>
     </div>
 
     <div style="margin-bottom:16px;">
       <div style="font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#ef4444;margin-bottom:8px;">💥 Pliométrie (20 min)</div>
       <table class="exo-table"><thead><tr><th>Exercice</th><th>Séries</th><th>Reps</th><th>Récup</th><th>Explications</th><th>Vidéo</th></tr></thead><tbody>
-      <tr><td><strong>Dynamic step up (plate + mini-band)</strong></td><td>2</td><td>10/c</td><td>1'</td><td>Position genoux hauts avec mini-bande milieu de pieds — dynamisme et hauteur de genou</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/BG_G2UUedTc" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>Dynamic step up (plate + mini-band)</strong></td><td>2</td><td>10/c</td><td>1'</td><td>Position genoux hauts avec mini-bande milieu de pieds — dynamisme et hauteur de genou</td><td><a class="vid-btn" href="https://youtube.com/shorts/BG_G2UUedTc" target="_blank">Vidéo</a></td></tr>
       <tr><td colspan="6" style="background:rgba(201,162,39,.06);color:var(--must);font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:6px 10px;">⚡ Bi-set — 3 séries · 2' récup</td></tr>
       <tr><td><strong>Chaise / Killy</strong></td><td>3</td><td>30"</td><td>2'</td><td>Dos contre un mur, genoux à 90° — position statique tenue</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/2AvcPstdm2Q" target="_blank">Vidéo</a></td></tr>
       <tr><td><strong>Box jump</strong></td><td>3</td><td>5</td><td>—</td><td>Saut sur hauteur — extension complète à la réception, attention à la descente</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/hDiQD4xhVDw" target="_blank">Vidéo</a></td></tr>
-      <tr><td><strong>Lateral power step up</strong></td><td>3</td><td>20"/c</td><td>1'</td><td>Pas chassé sur hauteur — prendre une hauteur permettant de faire l'exercice correctement</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/HPH_xcraIHM" target="_blank">Vidéo</a></td></tr>
-      <tr><td><strong>Sprint power step up</strong></td><td>3</td><td>6/c</td><td>1'30–2'</td><td>Départ fente, jambe genou au sol vient faire la réception sur la box, genou monte haut</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/XT4gnmIR9p0" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>Lateral power step up</strong></td><td>3</td><td>20"/c</td><td>1'</td><td>Pas chassé sur hauteur — prendre une hauteur permettant de faire l'exercice correctement</td><td><a class="vid-btn" href="https://youtube.com/shorts/HPH_xcraIHM" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>Sprint power step up</strong></td><td>3</td><td>6/c</td><td>1'30–2'</td><td>Départ fente, jambe genou au sol vient faire la réception sur la box, genou monte haut</td><td><a class="vid-btn" href="https://youtube.com/shorts/XT4gnmIR9p0" target="_blank">Vidéo</a></td></tr>
       </tbody></table>
     </div>
   </div>`,
@@ -1274,8 +1286,8 @@ const SESSIONS = {
       <div style="font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--wu);margin-bottom:8px;">🔥 Échauffement musculaire (10 min)</div>
       <table class="exo-table"><thead><tr><th>Exercice</th><th>Séries</th><th>Reps</th><th>Récup</th><th>Explications</th></tr></thead><tbody>
       <tr><td>Étirement fessier / psoas / cheville</td><td>2</td><td>30"/30"</td><td>/</td><td>Pied sur une hauteur, avancer le bassin vers l'avant sans décoller le talon (dynamique)</td></tr>
-      <tr><td>90/90 hanches<a class="vid-btn" href="https://www.youtube.com/shorts/25OaAr09j_U" target="_blank">Vidéo</a></td><td>2</td><td>20"</td><td>10"</td><td>90° d'angulation des genoux, aller d'un côté puis de l'autre en gardant les pieds au sol</td></tr>
-      <tr><td>Superman<a class="vid-btn" href="https://www.youtube.com/shorts/Ao8mSuQ01Dk" target="_blank">Vidéo</a></td><td>2</td><td>20"</td><td>10"</td><td>À plat ventre, bras et jambes tendus, mouvement vers le haut (dynamique)</td></tr>
+      <tr><td>90/90 hanches<a class="vid-btn" href="https://youtube.com/shorts/25OaAr09j_U" target="_blank">Vidéo</a></td><td>2</td><td>20"</td><td>10"</td><td>90° d'angulation des genoux, aller d'un côté puis de l'autre en gardant les pieds au sol</td></tr>
+      <tr><td>Superman<a class="vid-btn" href="https://youtube.com/shorts/Ao8mSuQ01Dk" target="_blank">Vidéo</a></td><td>2</td><td>20"</td><td>10"</td><td>À plat ventre, bras et jambes tendus, mouvement vers le haut (dynamique)</td></tr>
       <tr><td>Balancier de jambe latéral</td><td>2</td><td>20"</td><td>10"</td><td>Balancer la jambe vers l'extérieur puis vers l'intérieur en dynamique</td></tr>
       <tr><td>Balancier de jambe frontal</td><td>2</td><td>20"</td><td>10"</td><td>Balancer la jambe vers l'avant puis vers l'arrière en dynamique</td></tr>
       </tbody></table>
@@ -1287,32 +1299,32 @@ const SESSIONS = {
       <tr><td><strong>Montée de genoux déroulé</strong></td><td>2</td><td>15–20m</td><td>/</td><td>Montée de genoux au ralenti, dérouler la jambe vers l'avant en montant sur pointe de pieds</td><td></td></tr>
       <tr><td><strong>Marche pointe de pieds</strong></td><td>1</td><td>15–20m</td><td>/</td><td>Marche uniquement sur la pointe des pieds</td><td></td></tr>
       <tr><td><strong>Marche talon</strong></td><td>1</td><td>15–20m</td><td>/</td><td>Marche uniquement sur les talons</td><td></td></tr>
-      <tr><td><strong>SL high knee (mini-band)</strong></td><td>2 (1/c)</td><td>20"/20"</td><td>20"</td><td>Montée de genoux sur place unilatérale avec une mini-bande sur le milieu du pied</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/3SEbXqUIFvQ" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>SL high knee (mini-band)</strong></td><td>2 (1/c)</td><td>20"/20"</td><td>20"</td><td>Montée de genoux sur place unilatérale avec une mini-bande sur le milieu du pied</td><td><a class="vid-btn" href="https://youtube.com/shorts/3SEbXqUIFvQ" target="_blank">Vidéo</a></td></tr>
       <tr><td><strong>Talons fesses unilatéral</strong></td><td>2 (1/c)</td><td>15–20m</td><td>/</td><td>Une jambe tendue, une jambe en talon-fesse — inverser sur les deux séries</td><td></td></tr>
-      <tr><td><strong>Foot banded SL high knee</strong></td><td>2 (1/c)</td><td>15–20m</td><td>/</td><td>Montée de genoux unilatérale avec élastique ancré niveau cheville</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/JIGMZW-aNgo" target="_blank">Vidéo</a></td></tr>
-      <tr><td><strong>A-skips</strong></td><td>2</td><td>15–20m</td><td>/</td><td>Montées de genoux techniques avec rebonds dynamiques</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/imZSgZwZw8U" target="_blank">Vidéo</a></td></tr>
-      <tr><td><strong>C-skips</strong></td><td>2</td><td>15–20m</td><td>/</td><td>Montées de genoux + ouverture de hanche (alterner ouverture interne/externe)</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/qXXHuksIgwY" target="_blank">Vidéo</a></td></tr>
-      <tr><td><strong>Double switch</strong></td><td>2 (1/c)</td><td>15–20m</td><td>/</td><td>Deux appuis montée de genoux dynamique — on retombe toujours sur la même jambe</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/EpQf8Z8xrJk" target="_blank">Vidéo</a></td></tr>
-      <tr><td><strong>Triple switch</strong></td><td>2</td><td>15–20m</td><td>/</td><td>Trois appuis montée de genoux dynamique — on change de jambe de réception</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/1k3T_UE3j4o" target="_blank">Vidéo</a></td></tr>
-      <tr><td><strong>Jambes tendues dynamiques</strong></td><td>2</td><td>15–20m</td><td>/</td><td>Frapper le sol avec l'avant du pied — max d'appuis dynamiques, pas d'amplitude</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/Ao8mSuQ01Dk" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>Foot banded SL high knee</strong></td><td>2 (1/c)</td><td>15–20m</td><td>/</td><td>Montée de genoux unilatérale avec élastique ancré niveau cheville</td><td><a class="vid-btn" href="https://youtube.com/shorts/JIGMZW-aNgo" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>A-skips</strong></td><td>2</td><td>15–20m</td><td>/</td><td>Montées de genoux techniques avec rebonds dynamiques</td><td><a class="vid-btn" href="https://youtube.com/shorts/imZSgZwZw8U" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>C-skips</strong></td><td>2</td><td>15–20m</td><td>/</td><td>Montées de genoux + ouverture de hanche (alterner ouverture interne/externe)</td><td><a class="vid-btn" href="https://youtube.com/shorts/qXXHuksIgwY" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>Double switch</strong></td><td>2 (1/c)</td><td>15–20m</td><td>/</td><td>Deux appuis montée de genoux dynamique — on retombe toujours sur la même jambe</td><td><a class="vid-btn" href="https://youtube.com/shorts/EpQf8Z8xrJk" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>Triple switch</strong></td><td>2</td><td>15–20m</td><td>/</td><td>Trois appuis montée de genoux dynamique — on change de jambe de réception</td><td><a class="vid-btn" href="https://youtube.com/shorts/1k3T_UE3j4o" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>Jambes tendues dynamiques</strong></td><td>2</td><td>15–20m</td><td>/</td><td>Frapper le sol avec l'avant du pied — max d'appuis dynamiques, pas d'amplitude</td><td><a class="vid-btn" href="https://youtube.com/shorts/Ao8mSuQ01Dk" target="_blank">Vidéo</a></td></tr>
       </tbody></table>
     </div>
 
     <div style="margin-bottom:16px;">
       <div style="font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#ef4444;margin-bottom:8px;">⚡ Travail de sprint (10 min)</div>
       <table class="exo-table"><thead><tr><th>Exercice</th><th>Séries</th><th>Distance</th><th>Récup</th><th>Explications</th><th>Vidéo</th></tr></thead><tbody>
-      <tr><td><strong>Sprint départ fente</strong></td><td>4 (2/c)</td><td>20m (plot ttes les 5m)</td><td>30"</td><td>Départ position fente — la jambe genou au sol est celle qui propulse en premier. Accent sur la 1ère foulée.</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/hR2B_n-RDf4" target="_blank">Vidéo</a></td></tr>
-      <tr><td><strong>Sprint + décélération / relance</strong></td><td>2/c (4)</td><td>—</td><td>—</td><td>Sprint jusqu'au plot, décélération, réaccélération jusqu'au plot suivant</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/Y-q9cCf-uVE" target="_blank">Vidéo</a></td></tr>
-      <tr><td><strong>Sprint + décélération + contournement</strong></td><td>2</td><td>—</td><td>—</td><td>Sprint jusqu'au plot, décélération, contournement avec petits appuis puis relance</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/MKjMVG1aZWM" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>Sprint départ fente</strong></td><td>4 (2/c)</td><td>20m (plot ttes les 5m)</td><td>30"</td><td>Départ position fente — la jambe genou au sol est celle qui propulse en premier. Accent sur la 1ère foulée.</td><td><a class="vid-btn" href="https://youtube.com/shorts/hR2B_n-RDf4" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>Sprint + décélération / relance</strong></td><td>2/c (4)</td><td>—</td><td>—</td><td>Sprint jusqu'au plot, décélération, réaccélération jusqu'au plot suivant</td><td><a class="vid-btn" href="https://youtube.com/shorts/Y-q9cCf-uVE" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>Sprint + décélération + contournement</strong></td><td>2</td><td>—</td><td>—</td><td>Sprint jusqu'au plot, décélération, contournement avec petits appuis puis relance</td><td><a class="vid-btn" href="https://youtube.com/shorts/MKjMVG1aZWM" target="_blank">Vidéo</a></td></tr>
       </tbody></table>
     </div>
 
     <div style="margin-bottom:16px;">
       <div style="font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#06b6d4;margin-bottom:8px;">🔄 Travail de COD (10 min)</div>
       <table class="exo-table"><thead><tr><th>Exercice</th><th>Séries</th><th>Reps</th><th>Récup</th><th>Explications</th><th>Vidéo</th></tr></thead><tbody>
-      <tr><td><strong>Sprint + jump latéral</strong></td><td>4</td><td>20m</td><td>30"</td><td>Sprint jusqu'au plot, décélération, appui latéral une jambe, réception pieds opposés</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/oX3V-IyNPsI" target="_blank">Vidéo</a></td></tr>
-      <tr><td><strong>COD + relance</strong></td><td>2</td><td>4/c</td><td>1'–1'30</td><td>Mise en tension de l'élastique, partir vers l'avant en contrôlant la perte de contact, relance explosive</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/LiI_L_0nXdg" target="_blank">Vidéo</a></td></tr>
-      <tr><td><strong>COD 180° départ fente</strong></td><td>2</td><td>4/c</td><td>—</td><td>Fente, impulsion du pied d'appui, changement de direction 180° avec relance de sprint</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/1E7FqApZgwo" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>Sprint + jump latéral</strong></td><td>4</td><td>20m</td><td>30"</td><td>Sprint jusqu'au plot, décélération, appui latéral une jambe, réception pieds opposés</td><td><a class="vid-btn" href="https://youtube.com/shorts/oX3V-IyNPsI" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>COD + relance</strong></td><td>2</td><td>4/c</td><td>1'–1'30</td><td>Mise en tension de l'élastique, partir vers l'avant en contrôlant la perte de contact, relance explosive</td><td><a class="vid-btn" href="https://youtube.com/shorts/LiI_L_0nXdg" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>COD 180° départ fente</strong></td><td>2</td><td>4/c</td><td>—</td><td>Fente, impulsion du pied d'appui, changement de direction 180° avec relance de sprint</td><td><a class="vid-btn" href="https://youtube.com/shorts/1E7FqApZgwo" target="_blank">Vidéo</a></td></tr>
       </tbody></table>
     </div>
 
@@ -1334,8 +1346,8 @@ const SESSIONS = {
       <div style="font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--wu);margin-bottom:8px;">🔥 Échauffement musculaire (10 min)</div>
       <table class="exo-table"><thead><tr><th>Exercice</th><th>Séries</th><th>Reps</th><th>Récup</th><th>Explications</th></tr></thead><tbody>
       <tr><td>Étirement fessier / psoas / cheville</td><td>2</td><td>30"/30"</td><td>/</td><td>Pied sur une hauteur, avancer le bassin vers l'avant sans décoller le talon (dynamique)</td></tr>
-      <tr><td>90/90 hanches<a class="vid-btn" href="https://www.youtube.com/shorts/25OaAr09j_U" target="_blank">Vidéo</a></td><td>2</td><td>20"</td><td>10"</td><td>90° d'angulation des genoux, aller d'un côté puis de l'autre en gardant les pieds au sol</td></tr>
-      <tr><td>Superman<a class="vid-btn" href="https://www.youtube.com/shorts/Ao8mSuQ01Dk" target="_blank">Vidéo</a></td><td>2</td><td>20"</td><td>10"</td><td>À plat ventre, bras et jambes tendus, mouvement vers le haut (dynamique)</td></tr>
+      <tr><td>90/90 hanches<a class="vid-btn" href="https://youtube.com/shorts/25OaAr09j_U" target="_blank">Vidéo</a></td><td>2</td><td>20"</td><td>10"</td><td>90° d'angulation des genoux, aller d'un côté puis de l'autre en gardant les pieds au sol</td></tr>
+      <tr><td>Superman<a class="vid-btn" href="https://youtube.com/shorts/Ao8mSuQ01Dk" target="_blank">Vidéo</a></td><td>2</td><td>20"</td><td>10"</td><td>À plat ventre, bras et jambes tendus, mouvement vers le haut (dynamique)</td></tr>
       <tr><td>Balancier de jambe latéral</td><td>2</td><td>20"</td><td>10"</td><td>Balancer la jambe vers l'extérieur puis vers l'intérieur en dynamique</td></tr>
       <tr><td>Balancier de jambe frontal</td><td>2</td><td>20"</td><td>10"</td><td>Balancer la jambe vers l'avant puis vers l'arrière en dynamique</td></tr>
       </tbody></table>
@@ -1347,32 +1359,32 @@ const SESSIONS = {
       <tr><td><strong>Montée de genoux déroulé</strong></td><td>2</td><td>15–20m</td><td>/</td><td>Montée de genoux au ralenti, dérouler la jambe vers l'avant en montant sur pointe de pieds</td><td></td></tr>
       <tr><td><strong>Marche pointe de pieds</strong></td><td>1</td><td>15–20m</td><td>/</td><td>Marche uniquement sur la pointe des pieds</td><td></td></tr>
       <tr><td><strong>Marche talon</strong></td><td>1</td><td>15–20m</td><td>/</td><td>Marche uniquement sur les talons</td><td></td></tr>
-      <tr><td><strong>SL high knee (mini-band)</strong></td><td>2 (1/c)</td><td>20"/20"</td><td>20"</td><td>Montée de genoux sur place unilatérale avec une mini-bande sur le milieu du pied</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/3SEbXqUIFvQ" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>SL high knee (mini-band)</strong></td><td>2 (1/c)</td><td>20"/20"</td><td>20"</td><td>Montée de genoux sur place unilatérale avec une mini-bande sur le milieu du pied</td><td><a class="vid-btn" href="https://youtube.com/shorts/3SEbXqUIFvQ" target="_blank">Vidéo</a></td></tr>
       <tr><td><strong>Talons fesses unilatéral</strong></td><td>2 (1/c)</td><td>15–20m</td><td>/</td><td>Une jambe tendue, une jambe en talon-fesse — inverser sur les deux séries</td><td></td></tr>
-      <tr><td><strong>Foot banded SL high knee</strong></td><td>2 (1/c)</td><td>15–20m</td><td>/</td><td>Montée de genoux unilatérale avec élastique ancré niveau cheville</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/JIGMZW-aNgo" target="_blank">Vidéo</a></td></tr>
-      <tr><td><strong>A-skips</strong></td><td>2</td><td>15–20m</td><td>/</td><td>Montées de genoux techniques avec rebonds dynamiques</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/imZSgZwZw8U" target="_blank">Vidéo</a></td></tr>
-      <tr><td><strong>C-skips</strong></td><td>2</td><td>15–20m</td><td>/</td><td>Montées de genoux + ouverture de hanche (alterner ouverture interne/externe)</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/qXXHuksIgwY" target="_blank">Vidéo</a></td></tr>
-      <tr><td><strong>Double switch</strong></td><td>2 (1/c)</td><td>15–20m</td><td>/</td><td>Deux appuis montée de genoux dynamique — on retombe toujours sur la même jambe</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/EpQf8Z8xrJk" target="_blank">Vidéo</a></td></tr>
-      <tr><td><strong>Triple switch</strong></td><td>2</td><td>15–20m</td><td>/</td><td>Trois appuis montée de genoux dynamique — on change de jambe de réception</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/1k3T_UE3j4o" target="_blank">Vidéo</a></td></tr>
-      <tr><td><strong>Jambes tendues dynamiques</strong></td><td>2</td><td>15–20m</td><td>/</td><td>Frapper le sol avec l'avant du pied — max d'appuis dynamiques, pas d'amplitude</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/Ao8mSuQ01Dk" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>Foot banded SL high knee</strong></td><td>2 (1/c)</td><td>15–20m</td><td>/</td><td>Montée de genoux unilatérale avec élastique ancré niveau cheville</td><td><a class="vid-btn" href="https://youtube.com/shorts/JIGMZW-aNgo" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>A-skips</strong></td><td>2</td><td>15–20m</td><td>/</td><td>Montées de genoux techniques avec rebonds dynamiques</td><td><a class="vid-btn" href="https://youtube.com/shorts/imZSgZwZw8U" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>C-skips</strong></td><td>2</td><td>15–20m</td><td>/</td><td>Montées de genoux + ouverture de hanche (alterner ouverture interne/externe)</td><td><a class="vid-btn" href="https://youtube.com/shorts/qXXHuksIgwY" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>Double switch</strong></td><td>2 (1/c)</td><td>15–20m</td><td>/</td><td>Deux appuis montée de genoux dynamique — on retombe toujours sur la même jambe</td><td><a class="vid-btn" href="https://youtube.com/shorts/EpQf8Z8xrJk" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>Triple switch</strong></td><td>2</td><td>15–20m</td><td>/</td><td>Trois appuis montée de genoux dynamique — on change de jambe de réception</td><td><a class="vid-btn" href="https://youtube.com/shorts/1k3T_UE3j4o" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>Jambes tendues dynamiques</strong></td><td>2</td><td>15–20m</td><td>/</td><td>Frapper le sol avec l'avant du pied — max d'appuis dynamiques, pas d'amplitude</td><td><a class="vid-btn" href="https://youtube.com/shorts/Ao8mSuQ01Dk" target="_blank">Vidéo</a></td></tr>
       </tbody></table>
     </div>
 
     <div style="margin-bottom:16px;">
       <div style="font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#ef4444;margin-bottom:8px;">⚡ Travail de sprint (10 min)</div>
       <table class="exo-table"><thead><tr><th>Exercice</th><th>Séries</th><th>Distance</th><th>Récup</th><th>Explications</th><th>Vidéo</th></tr></thead><tbody>
-      <tr><td><strong>Sprint départ fente</strong></td><td>4 (2/c)</td><td>20m (plot ttes les 5m)</td><td>30"</td><td>Départ position fente — la jambe genou au sol est celle qui propulse en premier. Accent sur la 1ère foulée.</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/hR2B_n-RDf4" target="_blank">Vidéo</a></td></tr>
-      <tr><td><strong>Sprint + décélération / relance</strong></td><td>2/c (4)</td><td>—</td><td>—</td><td>Sprint jusqu'au plot, décélération, réaccélération jusqu'au plot suivant</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/Y-q9cCf-uVE" target="_blank">Vidéo</a></td></tr>
-      <tr><td><strong>Sprint + décélération + contournement</strong></td><td>2</td><td>—</td><td>—</td><td>Sprint jusqu'au plot, décélération, contournement avec petits appuis puis relance</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/MKjMVG1aZWM" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>Sprint départ fente</strong></td><td>4 (2/c)</td><td>20m (plot ttes les 5m)</td><td>30"</td><td>Départ position fente — la jambe genou au sol est celle qui propulse en premier. Accent sur la 1ère foulée.</td><td><a class="vid-btn" href="https://youtube.com/shorts/hR2B_n-RDf4" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>Sprint + décélération / relance</strong></td><td>2/c (4)</td><td>—</td><td>—</td><td>Sprint jusqu'au plot, décélération, réaccélération jusqu'au plot suivant</td><td><a class="vid-btn" href="https://youtube.com/shorts/Y-q9cCf-uVE" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>Sprint + décélération + contournement</strong></td><td>2</td><td>—</td><td>—</td><td>Sprint jusqu'au plot, décélération, contournement avec petits appuis puis relance</td><td><a class="vid-btn" href="https://youtube.com/shorts/MKjMVG1aZWM" target="_blank">Vidéo</a></td></tr>
       </tbody></table>
     </div>
 
     <div style="margin-bottom:16px;">
       <div style="font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#06b6d4;margin-bottom:8px;">🔄 Travail de COD (10 min)</div>
       <table class="exo-table"><thead><tr><th>Exercice</th><th>Séries</th><th>Reps</th><th>Récup</th><th>Explications</th><th>Vidéo</th></tr></thead><tbody>
-      <tr><td><strong>Sprint + jump latéral</strong></td><td>4</td><td>20m</td><td>30"</td><td>Sprint jusqu'au plot, décélération, appui latéral une jambe, réception pieds opposés</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/oX3V-IyNPsI" target="_blank">Vidéo</a></td></tr>
-      <tr><td><strong>COD + relance</strong></td><td>2</td><td>4/c</td><td>1'–1'30</td><td>Mise en tension de l'élastique, partir vers l'avant en contrôlant la perte de contact, relance explosive</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/LiI_L_0nXdg" target="_blank">Vidéo</a></td></tr>
-      <tr><td><strong>COD 180° départ fente</strong></td><td>2</td><td>4/c</td><td>—</td><td>Fente, impulsion du pied d'appui, changement de direction 180° avec relance de sprint</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/1E7FqApZgwo" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>Sprint + jump latéral</strong></td><td>4</td><td>20m</td><td>30"</td><td>Sprint jusqu'au plot, décélération, appui latéral une jambe, réception pieds opposés</td><td><a class="vid-btn" href="https://youtube.com/shorts/oX3V-IyNPsI" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>COD + relance</strong></td><td>2</td><td>4/c</td><td>1'–1'30</td><td>Mise en tension de l'élastique, partir vers l'avant en contrôlant la perte de contact, relance explosive</td><td><a class="vid-btn" href="https://youtube.com/shorts/LiI_L_0nXdg" target="_blank">Vidéo</a></td></tr>
+      <tr><td><strong>COD 180° départ fente</strong></td><td>2</td><td>4/c</td><td>—</td><td>Fente, impulsion du pied d'appui, changement de direction 180° avec relance de sprint</td><td><a class="vid-btn" href="https://youtube.com/shorts/1E7FqApZgwo" target="_blank">Vidéo</a></td></tr>
       </tbody></table>
     </div>
 
@@ -1388,166 +1400,239 @@ const SESSIONS = {
   // ---- RM (placeholder) ----
   'rm1': `
   <div class="session-block">
-    <div class="session-block-title"><span class="tag tag-rm">RM 1</span> Haut du corps · 45 min</div>
-
-    <div style="margin-bottom:16px;">
-      <div style="font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--must);margin-bottom:8px;">Bloc A — Tirage / stabilité scapulaire · 3 séries · Repos 45"</div>
-      <table class="exo-table"><thead><tr><th>Exercice</th><th style="text-align:center;width:55px;">Séries</th><th>Reps</th><th>Explications</th></tr></thead><tbody>
-      <tr><td><strong>Tirage horizontal prise neutre élastique</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=35Fl5qMvNgw" target="_blank">Vidéo</a></td><td rowspan="3" style="text-align:center;vertical-align:middle;font-family:'Barlow Condensed',sans-serif;font-size:2rem;font-weight:900;color:var(--must);">3</td><td>12</td><td>Élastique ancré au niveau de la poitrine, omoplates fixées, coudes le long du corps</td></tr>
-      <tr><td><strong>Tirage horizontal unilatéral élastique</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=35Fl5qMvNgw" target="_blank">Vidéo</a></td><td>10/bras</td><td>Un bras à la fois — omoplate fixe, pas de rotation du buste</td></tr>
-      <tr><td><strong>Scapular Push Up</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=t2F0f31Ujro" target="_blank">Vidéo</a></td><td>12</td><td>Position planche, pousser les omoplates vers le bas puis vers le haut sans fléchir les coudes</td></tr>
-      </tbody></table>
-    </div>
-
-    <div style="margin-bottom:16px;">
-      <div style="font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--must);margin-bottom:8px;">Bloc B — Poussée · 3 séries · Repos 60"</div>
-      <table class="exo-table"><thead><tr><th>Exercice</th><th style="text-align:center;width:55px;">Séries</th><th>Reps</th><th>Explications</th></tr></thead><tbody>
-      <tr><td><strong>Pompes tempo 3-1-1</strong><a class="vid-btn" href="https://www.youtube.com/shorts/n8PJC6yo_1o" target="_blank">Vidéo</a></td><td rowspan="3" style="text-align:center;vertical-align:middle;font-family:'Barlow Condensed',sans-serif;font-size:2rem;font-weight:900;color:var(--must);">3</td><td>8–12</td><td>3" descente / 1" pause bas / 1" remontée — contrôle total de la phase excentrique</td></tr>
-      <tr><td><strong>Pompes prise serrée</strong><a class="vid-btn" href="https://www.youtube.com/shorts/n8PJC6yo_1o" target="_blank">Vidéo</a></td><td>8</td><td>Mains rapprochées sous la poitrine, coudes glissent le long du corps</td></tr>
-      <tr><td><strong>Pompes avec mini-band autour des poignets</strong><a class="vid-btn" href="https://www.youtube.com/shorts/n8PJC6yo_1o" target="_blank">Vidéo</a></td><td>10</td><td>Mini-bande autour des poignets — activation des stabilisateurs de l'épaule</td></tr>
-      </tbody></table>
-    </div>
-
-    <div style="margin-bottom:16px;">
-      <div style="font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--must);margin-bottom:8px;">Bloc C — Prévention épaule · 2 à 3 séries · Repos 30"</div>
-      <table class="exo-table"><thead><tr><th>Exercice</th><th style="text-align:center;width:55px;">Séries</th><th>Reps</th><th>Explications</th></tr></thead><tbody>
-      <tr><td><strong>Tirage vertical prise neutre élastique</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=IANbsqIPAGg" target="_blank">Vidéo</a></td><td rowspan="3" style="text-align:center;vertical-align:middle;font-family:'Barlow Condensed',sans-serif;font-size:2rem;font-weight:900;color:var(--must);">2–3</td><td>12</td><td>Élastique au-dessus fixé, tirer vers la poitrine, coudes vers le bas</td></tr>
-      <tr><td><strong>Rotation externe élastique coude au corps</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=dBhyEu4RM4E" target="_blank">Vidéo</a></td><td>15</td><td>Coude plié à 90° collé au corps, rotation vers l'extérieur uniquement</td></tr>
-      <tr><td><strong>Wall slide mini-band</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=FNJczlnoNz8" target="_blank">Vidéo</a></td><td>12</td><td>Dos au mur, mini-bande autour des poignets, glisser les bras vers le haut en gardant les poignets contre le mur</td></tr>
-      </tbody></table>
-    </div>
-
-    <div style="background:rgba(239,68,68,.08);border-radius:6px;padding:14px 16px;">
-      <div style="font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#ef4444;margin-bottom:10px;">🔥 Core Finisher · 2 tours</div>
-      <table class="exo-table"><thead><tr><th>Exercice</th><th style="text-align:center;width:55px;">Tours</th><th>Durée</th></tr></thead><tbody>
-      <tr><td><strong>Hollow Hold</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=znXz0tkcUZY" target="_blank">Vidéo</a></td><td rowspan="3" style="text-align:center;vertical-align:middle;font-family:'Barlow Condensed',sans-serif;font-size:2rem;font-weight:900;color:#ef4444;">2</td><td>30"</td></tr>
-      <tr><td><strong>Arch Hold</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=wQdKFbKKjcI" target="_blank">Vidéo</a></td><td>30"</td></tr>
-      <tr><td><strong>Gainage de face</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=xLHNdFQSE6g" target="_blank">Vidéo</a></td><td>30"</td></tr>
-      </tbody></table>
-    </div>
+    <div class="session-block-title"><span class="tag tag-wu">WU</span> Routine d'échauffement pré-séance</div>
+    <table class="exo-table"><thead><tr><th>Exercice</th><th>Séries</th><th>Reps</th><th>Récup</th></tr></thead><tbody>
+    <tr><td>Étirement fessier / psoas / cheville</td><td>2</td><td>30"/30"</td><td>/</td></tr>
+    <tr><td>90/90 hanches</td><td>2</td><td>20"</td><td>10"</td></tr>
+    <tr><td>Superman</td><td>2</td><td>20"</td><td>10"</td></tr>
+    <tr><td>Balancier de jambe latéral</td><td>2</td><td>20"</td><td>10"</td></tr>
+    <tr><td>Cosaque squat<a class="vid-btn" href="https://www.youtube.com/shorts/eu9lSfL4M0A" target="_blank" rel="noopener noreferrer">Vidéo</a></td><td>2</td><td>12g/12d</td><td>/</td></tr>
+    <tr><td>Exercices épaule au choix</td><td>—</td><td>—</td><td>—</td></tr>
+    </tbody></table>
+  </div>
+  <div class="session-block">
+    <div class="session-block-title"><span class="tag tag-rm">RM 1</span> Renfo 1 — Pôle Espoir</div>
+    <table class="exo-table"><thead><tr><th>Exercice</th><th>Séries</th><th>Reps / Durée</th><th>Récup</th><th>Matériel</th><th>Explications</th></tr></thead><tbody>
+    <tr>
+      <td><strong>Fente latérale</strong><a class="vid-btn" href="https://www.youtube.com/shorts/eu9lSfL4M0A" target="_blank" rel="noopener noreferrer">Vidéo</a></td>
+      <td>3</td><td>8/c</td><td>1'30</td><td>—</td>
+      <td>Déplacer un pied sur le côté, fente latérale profonde, genou aligné avec le pied, l'autre jambe tendue, pousser pour revenir</td>
+    </tr>
+    <tr>
+      <td colspan="6" style="background:rgba(201,162,39,.07);color:var(--must);font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:6px 10px;">⚡ Bi-set — enchaîner sans repos entre les deux exercices</td>
+    </tr>
+    <tr>
+      <td><strong>Chaise iso</strong><a class="vid-btn" href="https://www.youtube.com/shorts/EE-A7qkMOek" target="_blank" rel="noopener noreferrer">Vidéo</a></td>
+      <td rowspan="2" style="text-align:center;vertical-align:middle;font-family:'Barlow Condensed',sans-serif;font-size:1.8rem;font-weight:900;color:var(--must);">3</td>
+      <td>20"</td><td rowspan="2">1'30–2'</td><td>—</td>
+      <td>Dos contre un mur, genoux à 90° — tenir la position</td>
+    </tr>
+    <tr>
+      <td><strong>Squat jump</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=YGGq0AE5Uyc" target="_blank" rel="noopener noreferrer">Vidéo</a></td>
+      <td>5</td><td>—</td>
+      <td>Squat + saut le plus haut possible, enchaîner</td>
+    </tr>
+    <tr>
+      <td><strong>Plank shoulder tap</strong><a class="vid-btn" href="https://www.youtube.com/shorts/VfwCQ14soUo" target="_blank" rel="noopener noreferrer">Vidéo</a></td>
+      <td>4</td><td>20"</td><td>45"/1'</td><td>—</td>
+      <td>Gainage sur les mains, toucher alternativement chaque épaule sans bouger le bassin</td>
+    </tr>
+    <tr>
+      <td colspan="6" style="background:rgba(201,162,39,.07);color:var(--must);font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:6px 10px;">⚡ Bi-set — faire un côté puis l'autre</td>
+    </tr>
+    <tr>
+      <td><strong>Lunge iso hold</strong><a class="vid-btn" href="https://www.youtube.com/shorts/VsurwTOm7JI" target="_blank" rel="noopener noreferrer">Vidéo</a></td>
+      <td rowspan="2" style="text-align:center;vertical-align:middle;font-family:'Barlow Condensed',sans-serif;font-size:1.8rem;font-weight:900;color:var(--must);">3</td>
+      <td>15"/c</td><td rowspan="2">1'30–2'</td><td>—</td>
+      <td>Tenir la position basse de fente — isométrique</td>
+    </tr>
+    <tr>
+      <td><strong>Lunge jump + double pogo</strong><a class="vid-btn" href="https://www.youtube.com/shorts/Pn2VZA5W-Ak" target="_blank" rel="noopener noreferrer">Vidéo</a></td>
+      <td>5</td><td>—</td>
+      <td>Saut en fente + 2 pogos à la réception, côté par côté</td>
+    </tr>
+    <tr>
+      <td><strong>KB plank drag through</strong><a class="vid-btn" href="https://www.youtube.com/shorts/xdPjToOJM1o" target="_blank" rel="noopener noreferrer">Vidéo</a></td>
+      <td>4</td><td>20"</td><td>45"/1'</td><td>Bouteille 1,5L</td>
+      <td>Gainage sur les mains, faire passer la bouteille d'un côté à l'autre sans bouger le bassin</td>
+    </tr>
+    </tbody></table>
   </div>`,
 
   'rm2': `
   <div class="session-block">
-    <div class="session-block-title"><span class="tag tag-rm">RM 2</span> Bas du corps · 50 min</div>
-
-    <div style="margin-bottom:16px;">
-      <div style="font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--must);margin-bottom:8px;">Bloc A — Dominante quadriceps · 3 séries · Repos 60"</div>
-      <table class="exo-table"><thead><tr><th>Exercice</th><th style="text-align:center;width:55px;">Séries</th><th>Reps</th><th>Explications</th></tr></thead><tbody>
-      <tr><td><strong>Squat tempo 4 secondes descente</strong><a class="vid-btn" href="https://www.youtube.com/shorts/KDEMcsQnUq0" target="_blank">Vidéo</a></td><td rowspan="3" style="text-align:center;vertical-align:middle;font-family:'Barlow Condensed',sans-serif;font-size:2rem;font-weight:900;color:var(--must);">3</td><td>10</td><td>4" de descente contrôlée, 1" pause en bas, remontée explosive — quadriceps sous tension</td></tr>
-      <tr><td><strong>Split squat</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=mhgcP9e8H40" target="_blank">Vidéo</a></td><td>8/jambe</td><td>Pied avant à plat, genou arrière proche du sol, buste droit</td></tr>
-      <tr><td><strong>Mini-band squat</strong><a class="vid-btn" href="https://www.youtube.com/shorts/KDEMcsQnUq0" target="_blank">Vidéo</a></td><td>15</td><td>Mini-bande au-dessus des genoux, pousser contre la bande tout au long du mouvement — activation fessiers ++</td></tr>
-      </tbody></table>
-    </div>
-
-    <div style="margin-bottom:16px;">
-      <div style="font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--must);margin-bottom:8px;">Bloc B — Dominante ischios / fessiers · 3 séries · Repos 45"</div>
-      <table class="exo-table"><thead><tr><th>Exercice</th><th style="text-align:center;width:55px;">Séries</th><th>Reps</th><th>Explications</th></tr></thead><tbody>
-      <tr><td><strong>Band seated leg curl unilatéral</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=8swIgVCA918" target="_blank">Vidéo</a></td><td rowspan="3" style="text-align:center;vertical-align:middle;font-family:'Barlow Condensed',sans-serif;font-size:2rem;font-weight:900;color:var(--must);">3</td><td>12/jambe</td><td>Assis, élastique ancré au pied, fléchir le genou — ischios en unilatéral</td></tr>
-      <tr><td><strong>Band leg curl allongé / inversé</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=8swIgVCA918" target="_blank">Vidéo</a></td><td>12</td><td>Allongé sur le ventre, élastique aux chevilles, fléchir les genoux</td></tr>
-      <tr><td><strong>Hip thrust unilatéral poids du corps</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=jmEcrj9LO5I" target="_blank">Vidéo</a></td><td>12/jambe</td><td>Dos sur banc, une jambe tendue, pousser sur le talon d'appui — fessier unilatéral</td></tr>
-      </tbody></table>
-    </div>
-
-    <div style="margin-bottom:16px;">
-      <div style="font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--must);margin-bottom:8px;">Bloc C — Prévention genou / cheville · 2 séries · Repos 30"</div>
-      <table class="exo-table"><thead><tr><th>Exercice</th><th style="text-align:center;width:55px;">Séries</th><th>Reps</th><th>Explications</th></tr></thead><tbody>
-      <tr><td><strong>Extension mollet unilatérale</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=COOLFwTy0bA" target="_blank">Vidéo</a></td><td rowspan="3" style="text-align:center;vertical-align:middle;font-family:'Barlow Condensed',sans-serif;font-size:2rem;font-weight:900;color:var(--must);">2</td><td>20</td><td>Monter sur la pointe d'un pied, descente lente et contrôlée — renfo mollet + cheville</td></tr>
-      <tr><td><strong>Montée 2 jambes / descente 1 jambe (excentrique)</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=COOLFwTy0bA" target="_blank">Vidéo</a></td><td>8/jambe</td><td>Monter sur deux pieds, retenir la descente sur une jambe — excentrique cheville ++</td></tr>
-      <tr><td><strong>Mini-band walk latéral</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=0EQTY5-C3PQ" target="_blank">Vidéo</a></td><td>15 m</td><td>Mini-bande aux chevilles ou genoux, pas chassés, genoux fléchis, dos droit</td></tr>
-      </tbody></table>
-    </div>
-
-    <div style="background:rgba(239,68,68,.08);border-radius:6px;padding:14px 16px;">
-      <div style="font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#ef4444;margin-bottom:10px;">🔥 Core · 2 tours</div>
-      <table class="exo-table"><thead><tr><th>Exercice</th><th style="text-align:center;width:55px;">Tours</th><th>Durée</th></tr></thead><tbody>
-      <tr><td><strong>Bear plank</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=VaoNT0BLTqw" target="_blank">Vidéo</a></td><td rowspan="3" style="text-align:center;vertical-align:middle;font-family:'Barlow Condensed',sans-serif;font-size:2rem;font-weight:900;color:#ef4444;">2</td><td>30"</td></tr>
-      <tr><td><strong>Gainage rotation bassin</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=bYL97aKvOEQ" target="_blank">Vidéo</a></td><td>30"</td></tr>
-      <tr><td><strong>KB Plank</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=XuDIQSqYM2w" target="_blank">Vidéo</a></td><td>30"</td></tr>
-      </tbody></table>
+    <div class="session-block-title"><span class="tag tag-wu">WU</span> Routine d'échauffement pré-séance</div>
+    <p style="font-size:.85rem;color:#aaa;">Étirement fessier · 90/90 · Superman · Balancier latéral · Cosaque squat · Exercices épaule au choix</p>
+  </div>
+  <div class="session-block">
+    <div class="session-block-title"><span class="tag tag-rm">RM 2</span> Renfo 2 — PP Off-Season</div>
+    <table class="exo-table"><thead><tr><th>Exercice</th><th>Séries</th><th>Reps / Durée</th><th>Récup</th><th>Matériel</th><th>Explications</th></tr></thead><tbody>
+    <tr>
+      <td><strong>Seated box jump</strong><a class="vid-btn" href="https://www.youtube.com/shorts/Ogats4wEMlU" target="_blank" rel="noopener noreferrer">Vidéo</a></td>
+      <td>3</td><td>6</td><td>1'30–2'</td><td>Box / banc</td>
+      <td>Assis sur une box basse, pieds à plat, sans élan — exploser vers le haut, amortir en fléchissant les genoux</td>
+    </tr>
+    <tr>
+      <td><strong>Élévation frontale élastique</strong><a class="vid-btn" href="https://www.youtube.com/shorts/_HU0_vXAyUY" target="_blank" rel="noopener noreferrer">Vidéo</a></td>
+      <td>4</td><td>12</td><td>1'–1'30</td><td>Élastique bleu</td>
+      <td>Élastique sous les pieds, bras tendus devant, monter jusqu'à hauteur épaule</td>
+    </tr>
+    <tr>
+      <td><strong>Tirage menton élastique</strong><a class="vid-btn" href="https://www.youtube.com/shorts/JMVsMK_qK44" target="_blank" rel="noopener noreferrer">Vidéo</a></td>
+      <td>4</td><td>12</td><td>1'–1'30</td><td>Élastique bleu</td>
+      <td>Élastique sous les pieds, tirer vers le menton — coudes au-dessus des poignets</td>
+    </tr>
+    <tr>
+      <td><strong>Forward step down</strong><a class="vid-btn" href="https://www.youtube.com/shorts/7t-vJ9SboYA" target="_blank" rel="noopener noreferrer">Vidéo</a></td>
+      <td>3</td><td>8/c</td><td>1'–1'30</td><td>Box / banc</td>
+      <td>Jambe d'appui sur la box, fléchir de façon contrôlée — toucher le sol avec le talon, genou aligné avec le pied</td>
+    </tr>
+    <tr>
+      <td><strong>Reverse step down</strong><a class="vid-btn" href="https://www.youtube.com/shorts/7t-vJ9SboYA" target="_blank" rel="noopener noreferrer">Vidéo</a></td>
+      <td>3</td><td>8/c</td><td>1'–1'30</td><td>Box / banc</td>
+      <td>Reculer une jambe, descendre lentement en fléchissant la jambe d'appui, remonter en poussant</td>
+    </tr>
+    <tr>
+      <td><strong>Sit banded cuban press</strong><a class="vid-btn" href="https://www.youtube.com/shorts/woHE6Ci7kUw" target="_blank" rel="noopener noreferrer">Vidéo</a></td>
+      <td>3</td><td>12</td><td>1'–1'30</td><td>Élastique bleu</td>
+      <td>Assis, même mouvement que le cuban press — tirer, rotation externe, développer au-dessus de la tête</td>
+    </tr>
+    </tbody></table>
+    <div style="background:rgba(239,68,68,.08);border-radius:4px;padding:10px 14px;margin-top:12px;">
+      <span style="font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:700;color:#ef4444;text-transform:uppercase;letter-spacing:.1em;">🔥 Finisher</span>
+      <p style="font-size:.85rem;color:#ddd;margin-top:4px;">6 × 40" / 20" — Gainage plank (planche de face)</p>
     </div>
   </div>`,
 
   'rm3': `
   <div class="session-block">
-    <div class="session-block-title"><span class="tag tag-rm">RM 3</span> Fonctionnelle n°1 — Chaîne croisée</div>
-
-    <div style="margin-bottom:16px;">
-      <div style="font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--must);margin-bottom:8px;">Bloc A · 3 tours · Repos 60"</div>
-      <table class="exo-table"><thead><tr><th>Exercice</th><th style="text-align:center;width:55px;">Tours</th><th>Reps</th><th>Explications</th></tr></thead><tbody>
-      <tr><td><strong>Pallof Press en fente genou au sol</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=cDvRJcQNT-Q" target="_blank">Vidéo</a></td><td rowspan="4" style="text-align:center;vertical-align:middle;font-family:'Barlow Condensed',sans-serif;font-size:2rem;font-weight:900;color:var(--must);">3</td><td>10/côté</td><td>En fente genou au sol, élastique, pousser dans l'alignement — résister à la rotation</td></tr>
-      <tr><td><strong>Mountain climbers croisés</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=34G7X0QtQuY" target="_blank">Vidéo</a></td><td>20</td><td>Gainage de face, genou vers l'épaule opposée — coordination diagonale</td></tr>
-      <tr><td><strong>Fente avant + rotation élastique</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=lF4qud4hTaE" target="_blank">Vidéo</a></td><td>8/côté</td><td>Fente avant, rotation du buste avec l'élastique vers le genou avant — transfert haut/bas</td></tr>
-      <tr><td><strong>Bear plank shoulder taps</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=VaoNT0BLTqw" target="_blank">Vidéo</a></td><td>20 touches</td><td>Bear plank, toucher alternativement chaque épaule avec la main opposée sans bouger le bassin</td></tr>
-      </tbody></table>
-    </div>
-
-    <div style="margin-bottom:16px;">
-      <div style="font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--must);margin-bottom:8px;">Bloc B · 3 tours · Repos 45"</div>
-      <table class="exo-table"><thead><tr><th>Exercice</th><th style="text-align:center;width:55px;">Tours</th><th>Reps</th><th>Explications</th></tr></thead><tbody>
-      <tr><td><strong>Russian Twist</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=u4C44NMmc60" target="_blank">Vidéo</a></td><td rowspan="4" style="text-align:center;vertical-align:middle;font-family:'Barlow Condensed',sans-serif;font-size:2rem;font-weight:900;color:var(--must);">3</td><td>20</td><td>Amplitude maximale sur les côtés</td></tr>
-      <tr><td><strong>Gainage commando</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=vkY4KUa_msM" target="_blank">Vidéo</a></td><td>30"</td><td>Coudes → mains sans bouger le bassin — rythme constant</td></tr>
-      <tr><td><strong>Bicycle Crunches</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=eqg47ZuGZXQ" target="_blank">Vidéo</a></td><td>20</td><td>Coudes et épaules opposées — coordination diagonale</td></tr>
-      <tr><td><strong>V-Up</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=7UVgs18Y1P4" target="_blank">Vidéo</a></td><td>12</td><td>Banane → toucher les pieds — contrôle lombaire</td></tr>
-      </tbody></table>
-    </div>
-
-    <div style="background:rgba(201,162,39,.07);border:1px solid rgba(201,162,39,.2);border-radius:6px;padding:14px 16px;">
-      <div style="font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--must);margin-bottom:10px;">🎾 Coordination balle de tennis · 3 × 45"</div>
-      <table class="exo-table"><thead><tr><th>Exercice</th><th>Durée</th><th>Notes</th></tr></thead><tbody>
-      <tr><td>Jonglage main droite</td><td>45"</td><td>Contrôle unilatéral, régularité du rebond</td></tr>
-      <tr><td>Jonglage main gauche</td><td>45"</td><td>Même exigence que la main dominante</td></tr>
-      <tr><td>Lancer / réception avec déplacement latéral</td><td>45"</td><td>Déplacement latéral continu, attraper sans s'arrêter</td></tr>
-      </tbody></table>
-    </div>
+    <div class="session-block-title"><span class="tag tag-wu">WU</span> Routine d'échauffement pré-séance</div>
+    <p style="font-size:.85rem;color:#aaa;">Étirement fessier · 90/90 · Superman · Balancier latéral · Cosaque squat · Exercices épaule au choix</p>
+  </div>
+  <div class="session-block">
+    <div class="session-block-title"><span class="tag tag-rm">RM 3</span> Renfo 3 — Pôle Espoir (progression Renfo 1)</div>
+    <table class="exo-table"><thead><tr><th>Exercice</th><th>Séries</th><th>Reps / Durée</th><th>Récup</th><th>Matériel</th><th>Explications</th></tr></thead><tbody>
+    <tr>
+      <td><strong>Fente latérale</strong><a class="vid-btn" href="https://www.youtube.com/shorts/eu9lSfL4M0A" target="_blank" rel="noopener noreferrer">Vidéo</a></td>
+      <td>3</td><td>10/c</td><td>1'30</td><td>—</td>
+      <td>Même exercice que Renfo 1 — volume augmenté (8→10/c)</td>
+    </tr>
+    <tr>
+      <td colspan="6" style="background:rgba(201,162,39,.07);color:var(--must);font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:6px 10px;">⚡ Bi-set — enchaîner sans repos entre les deux exercices</td>
+    </tr>
+    <tr>
+      <td><strong>Chaise iso</strong><a class="vid-btn" href="https://www.youtube.com/shorts/EE-A7qkMOek" target="_blank" rel="noopener noreferrer">Vidéo</a></td>
+      <td rowspan="2" style="text-align:center;vertical-align:middle;font-family:'Barlow Condensed',sans-serif;font-size:1.8rem;font-weight:900;color:var(--must);">3</td>
+      <td>30"</td><td rowspan="2">1'30–2'</td><td>—</td>
+      <td>Tenir la position plus longtemps (20"→30")</td>
+    </tr>
+    <tr>
+      <td><strong>Squat jump</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=YGGq0AE5Uyc" target="_blank" rel="noopener noreferrer">Vidéo</a></td>
+      <td>6</td><td>—</td>
+      <td>Volume augmenté (5→6)</td>
+    </tr>
+    <tr>
+      <td><strong>Plank shoulder tap</strong><a class="vid-btn" href="https://www.youtube.com/shorts/VfwCQ14soUo" target="_blank" rel="noopener noreferrer">Vidéo</a></td>
+      <td>4</td><td>30"</td><td>30"/45"</td><td>—</td>
+      <td>Durée augmentée (20"→30") et récup raccourcie</td>
+    </tr>
+    <tr>
+      <td colspan="6" style="background:rgba(201,162,39,.07);color:var(--must);font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:6px 10px;">⚡ Bi-set — faire un côté puis l'autre</td>
+    </tr>
+    <tr>
+      <td><strong>Lunge iso hold</strong><a class="vid-btn" href="https://www.youtube.com/shorts/VsurwTOm7JI" target="_blank" rel="noopener noreferrer">Vidéo</a></td>
+      <td rowspan="2" style="text-align:center;vertical-align:middle;font-family:'Barlow Condensed',sans-serif;font-size:1.8rem;font-weight:900;color:var(--must);">3</td>
+      <td>15"/c</td><td rowspan="2">1'30–2'</td><td>—</td>
+      <td>Même durée, côté par côté</td>
+    </tr>
+    <tr>
+      <td><strong>Lunge jump + double pogo</strong><a class="vid-btn" href="https://www.youtube.com/shorts/Pn2VZA5W-Ak" target="_blank" rel="noopener noreferrer">Vidéo</a></td>
+      <td>6</td><td>—</td>
+      <td>Volume augmenté (5→6)</td>
+    </tr>
+    <tr>
+      <td><strong>KB plank drag through</strong><a class="vid-btn" href="https://www.youtube.com/shorts/xdPjToOJM1o" target="_blank" rel="noopener noreferrer">Vidéo</a></td>
+      <td>4</td><td>30"</td><td>30"/45"</td><td>Bouteille 1,5L</td>
+      <td>Durée augmentée (20"→30") et récup raccourcie</td>
+    </tr>
+    </tbody></table>
   </div>`,
 
   'rm4': `
   <div class="session-block">
-    <div class="session-block-title"><span class="tag tag-rm">RM 4</span> Fonctionnelle n°2 — Athlète Pôle Espoir</div>
-
-    <div style="margin-bottom:16px;">
-      <div style="font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--must);margin-bottom:8px;">Bloc A — Unilatéral · 3 séries · Repos 45"</div>
-      <table class="exo-table"><thead><tr><th>Exercice</th><th style="text-align:center;width:55px;">Séries</th><th>Reps</th><th>Explications</th></tr></thead><tbody>
-      <tr><td><strong>Split squat isométrique</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=29rZsXPDIXQ" target="_blank">Vidéo</a></td><td rowspan="3" style="text-align:center;vertical-align:middle;font-family:'Barlow Condensed',sans-serif;font-size:2rem;font-weight:900;color:var(--must);">3</td><td>20"/jambe</td><td>Tenir la position basse de split squat — isométrie fonctionnelle</td></tr>
-      <tr><td><strong>Single leg RDL poids du corps</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=FgJjp4uCzAQ" target="_blank">Vidéo</a></td><td>10/jambe</td><td>Équilibre sur une jambe, buste vers l'avant, jambe libre derrière — ischios + stabilité</td></tr>
-      <tr><td><strong>Hip thrust unilatéral</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=jmEcrj9LO5I" target="_blank">Vidéo</a></td><td>12/jambe</td><td>Dos sur banc, une jambe tendue, pousser sur le talon — fessier unilatéral</td></tr>
-      </tbody></table>
+    <div class="session-block-title"><span class="tag tag-wu">WU</span> Routine d'échauffement pré-séance</div>
+    <p style="font-size:.85rem;color:#aaa;">Étirement fessier · 90/90 · Superman · Balancier latéral · Cosaque squat · Exercices épaule au choix</p>
+  </div>
+  <div class="session-block">
+    <div class="session-block-title"><span class="tag tag-rm">RM 4</span> Renfo 4 — PP Off-Season</div>
+    <table class="exo-table"><thead><tr><th>Exercice</th><th>Séries</th><th>Reps</th><th>Récup</th><th>Matériel</th><th>Explications</th></tr></thead><tbody>
+    <tr>
+      <td colspan="6" style="background:rgba(201,162,39,.08);color:var(--must);font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:8px 10px;">⚡ Bi-set — Activation pliométrique</td>
+    </tr>
+    <tr>
+      <td><strong>Squat jump</strong><a class="vid-btn" href="https://www.youtube.com/shorts/KDEMcsQnUq0" target="_blank" rel="noopener noreferrer">Vidéo</a></td>
+      <td rowspan="2" style="text-align:center;vertical-align:middle;font-family:'Barlow Condensed',sans-serif;font-size:1.8rem;font-weight:900;color:var(--must);">3</td>
+      <td>10</td><td rowspan="2">1'30–2'</td><td>—</td>
+      <td>Squat + saut le plus haut possible, enchaîner les répétitions</td>
+    </tr>
+    <tr>
+      <td><strong>Box jump</strong><a class="vid-btn" href="https://www.youtube.com/shorts/hDiQD4xhVDw" target="_blank" rel="noopener noreferrer">Vidéo</a></td>
+      <td>5</td><td>Box / banc / escalier</td>
+      <td>Saut sur hauteur, extension complète à la réception</td>
+    </tr>
+    <tr>
+      <td><strong>Pompes (sur pieds ou genoux)</strong><a class="vid-btn" href="https://www.youtube.com/shorts/n8PJC6yo_1o" target="_blank" rel="noopener noreferrer">Vidéo</a></td>
+      <td>3</td><td>8</td><td>1'–1'30</td><td>—</td>
+      <td>Mains sous les épaules, corps gainé, descendre la poitrine près du sol</td>
+    </tr>
+    <tr>
+      <td><strong>Resistance band biceps curl</strong><a class="vid-btn" href="https://www.youtube.com/shorts/20xtfGZ37nw" target="_blank" rel="noopener noreferrer">Vidéo</a></td>
+      <td>3</td><td>8</td><td>1'–1'30</td><td>Élastique bleu</td>
+      <td>Élastique sous les pieds, bras tendus, fléchir les coudes vers les épaules</td>
+    </tr>
+    <tr>
+      <td><strong>Tirage triceps élastique OH</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=maMbzPu0kMo" target="_blank" rel="noopener noreferrer">Vidéo</a></td>
+      <td>3</td><td>8</td><td>1'–1'30</td><td>Élastique bleu</td>
+      <td>Bras au-dessus de la tête, coudes proches des oreilles, étendre le bras vers le haut</td>
+    </tr>
+    <tr>
+      <td><strong>RDL élastique</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=Qe1I-4afoa4" target="_blank" rel="noopener noreferrer">Vidéo</a></td>
+      <td>3</td><td>12</td><td>1'30–2'</td><td>Élastique bleu</td>
+      <td>Pieds sur l'élastique, basculer les hanches en arrière dos plat, remonter en contractant les fessiers</td>
+    </tr>
+    <tr>
+      <td><strong>Resistance band push press</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=OTmpdnJkneI" target="_blank" rel="noopener noreferrer">Vidéo</a></td>
+      <td>3</td><td>8</td><td>1'–1'30</td><td>Élastique bleu</td>
+      <td>Légère flexion des jambes puis pousser au-dessus de la tête, bras tendus</td>
+    </tr>
+    <tr>
+      <td><strong>Burpees</strong><a class="vid-btn" href="https://www.youtube.com/shorts/YqsD_xnzrZE" target="_blank" rel="noopener noreferrer">Vidéo</a></td>
+      <td>3</td><td>max</td><td>—</td><td>—</td>
+      <td>Squat → mains au sol → jambes en arrière → pompe → revenir → saut explosif</td>
+    </tr>
+    </tbody></table>
+    <div style="background:rgba(239,68,68,.08);border-radius:4px;padding:10px 14px;margin-top:12px;">
+      <span style="font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:700;color:#ef4444;text-transform:uppercase;letter-spacing:.1em;">🔥 Finisher</span>
+      <p style="font-size:.85rem;color:#ddd;margin-top:4px;">6 × 40" / 20" — Superman (planche sur le ventre, lever les 4 membres tendus)</p>
     </div>
-
-    <div style="margin-bottom:16px;">
-      <div style="font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--must);margin-bottom:8px;">Bloc B — Gainage dynamique · 3 séries · Repos 30"</div>
-      <table class="exo-table"><thead><tr><th>Exercice</th><th style="text-align:center;width:55px;">Séries</th><th>Durée</th><th>Explications</th></tr></thead><tbody>
-      <tr><td><strong>Hollow Hold</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=znXz0tkcUZY" target="_blank">Vidéo</a></td><td rowspan="4" style="text-align:center;vertical-align:middle;font-family:'Barlow Condensed',sans-serif;font-size:2rem;font-weight:900;color:var(--must);">3</td><td>30"</td><td>Banane — abdos rentrés, pas creuser le dos</td></tr>
-      <tr><td><strong>Arch Hold</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=wQdKFbKKjcI" target="_blank">Vidéo</a></td><td>30"</td><td>Superman bras tendus, 4 membres levés</td></tr>
-      <tr><td><strong>Gainage rotation bassin</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=bYL97aKvOEQ" target="_blank">Vidéo</a></td><td>30"</td><td>Gainage de face + rotation du bassin alternativement</td></tr>
-      <tr><td><strong>KB Plank</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=XuDIQSqYM2w" target="_blank">Vidéo</a></td><td>30"</td><td>Déplacer un poids d'un côté à l'autre sans bouger le bassin</td></tr>
-      </tbody></table>
-    </div>
-
-    <div style="margin-bottom:16px;">
-      <div style="font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--must);margin-bottom:8px;">Bloc C — Coordination et réactivité · 3 tours · Repos 30"</div>
-      <table class="exo-table"><thead><tr><th>Exercice</th><th style="text-align:center;width:55px;">Tours</th><th>Durée/Reps</th><th>Explications</th></tr></thead><tbody>
-      <tr><td><strong>🎾 Réaction balle de tennis rebond au sol</strong></td><td rowspan="3" style="text-align:center;vertical-align:middle;font-family:'Barlow Condensed',sans-serif;font-size:2rem;font-weight:900;color:var(--must);">3</td><td>30"</td><td>Lâcher la balle, réagir au rebond et l'attraper le plus vite possible — temps de réaction</td></tr>
-      <tr><td><strong>🎾 Déplacements latéraux + attraper balle</strong></td><td>30"</td><td>Déplacement continu, attraper la balle lancée sans s'arrêter de bouger</td></tr>
-      <tr><td><strong>Fentes multidirectionnelles</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=29rZsXPDIXQ" target="_blank">Vidéo</a></td><td>8/direction</td><td>Avant, arrière, latéral gauche, latéral droit — stabilité à la réception</td></tr>
-      </tbody></table>
-    </div>
-
-    <div style="background:rgba(6,182,212,.07);border:1px solid rgba(6,182,212,.2);border-radius:6px;padding:14px 16px;">
-      <div style="font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#06b6d4;margin-bottom:6px;">🔄 Circuit Training Off-Season U15 — 20 à 25 min</div>
-      <p style="font-size:.78rem;color:#888;margin-bottom:10px;">40" travail · 20" repos · 3 tours · 2' entre les tours</p>
-      <table class="exo-table"><thead><tr><th>Atelier</th><th style="text-align:center;width:55px;">Tours</th><th>Travail</th><th>Repos</th></tr></thead><tbody>
-      <tr><td><strong>1 — Scapular Push Up</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=t2F0f31Ujro" target="_blank">Vidéo</a></td><td rowspan="8" style="text-align:center;vertical-align:middle;font-family:'Barlow Condensed',sans-serif;font-size:2rem;font-weight:900;color:#06b6d4;">3</td><td>40"</td><td>20"</td></tr>
-      <tr><td><strong>2 — Split squat alterné</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=mhgcP9e8H40" target="_blank">Vidéo</a></td><td>40"</td><td>20"</td></tr>
-      <tr><td><strong>3 — Pallof Press en fente genou au sol</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=cDvRJcQNT-Q" target="_blank">Vidéo</a></td><td>40"</td><td>20"</td></tr>
-      <tr><td><strong>4 — Mountain Climbers croisés</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=34G7X0QtQuY" target="_blank">Vidéo</a></td><td>40"</td><td>20"</td></tr>
-      <tr><td><strong>5 — Hip Thrust unilatéral</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=jmEcrj9LO5I" target="_blank">Vidéo</a></td><td>40"</td><td>20"</td></tr>
-      <tr><td><strong>6 — Russian Twist</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=u4C44NMmc60" target="_blank">Vidéo</a></td><td>40"</td><td>20"</td></tr>
-      <tr><td><strong>7 — Mini-band walk latéral</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=0EQTY5-C3PQ" target="_blank">Vidéo</a></td><td>40"</td><td>20"</td></tr>
-      <tr><td><strong>8 — Gainage commando</strong><a class="vid-btn" href="https://www.youtube.com/watch?v=vkY4KUa_msM" target="_blank">Vidéo</a></td><td>40"</td><td>20"</td></tr>
-      </tbody></table>
-    </div>
+  </div>
+  <div style="background:rgba(6,182,212,.06);border:1px solid rgba(6,182,212,.2);border-radius:6px;padding:14px 16px;margin-top:16px;">
+    <div style="font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:#06b6d4;margin-bottom:8px;">🔄 Circuit Training Deload — 18 min (enchaîner en 3 rounds sans récup)</div>
+    <table class="exo-table"><thead><tr><th>Exercice</th><th style="text-align:center;width:60px;">Rounds</th><th>Durée / Reps</th><th>Récup</th></tr></thead><tbody>
+    <tr>
+      <td><strong>Box jump / squat sauté</strong><a class="vid-btn" href="https://www.youtube.com/shorts/hDiQD4xhVDw" target="_blank" rel="noopener noreferrer">Vidéo</a></td>
+      <td rowspan="3" style="text-align:center;vertical-align:middle;font-family:'Barlow Condensed',sans-serif;font-size:2rem;font-weight:900;color:#06b6d4;">3</td>
+      <td>40"</td><td>20"</td>
+    </tr>
+    <tr>
+      <td><strong>Sit-up</strong><a class="vid-btn" href="https://www.youtube.com/shorts/SDE4nWuDCZs" target="_blank" rel="noopener noreferrer">Vidéo</a></td>
+      <td>max reps</td><td>—</td>
+    </tr>
+    <tr>
+      <td><strong>Corde à sauter / pogo jump</strong></td>
+      <td>50</td><td>—</td>
+    </tr>
+    </tbody></table>
   </div>`,
 
   // ---- MOBILITÉ (placeholder) ----
@@ -1568,19 +1653,19 @@ const SESSIONS = {
       <td><strong>Couch Stretch</strong></td>
       <td>2</td><td>30"/côté</td>
       <td>Psoas · droit fémoral · extension de hanche</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/Fna-gTutGqI" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/Fna-gTutGqI" target="_blank">Vidéo</a></td>
     </tr>
     <tr>
       <td><strong>Split Stance Adductor Mob</strong></td>
       <td>1</td><td>10 reps lentes/côté</td>
       <td>Adducteurs · mobilité de l'aine</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/qhCUQC5QDA8" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/qhCUQC5QDA8" target="_blank">Vidéo</a></td>
     </tr>
     <tr>
       <td><strong>90/90 rotation interne / externe</strong></td>
       <td>1</td><td>8 reps/côté</td>
       <td>Rotation interne et externe de hanche · prévention pubalgies</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/25OaAr09j_U" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/25OaAr09j_U" target="_blank">Vidéo</a></td>
     </tr>
     </tbody></table>
   </div>
@@ -1596,25 +1681,25 @@ const SESSIONS = {
       <td><strong>Hip Flexion Rotation Externe (élastique)</strong></td>
       <td>2</td><td>10/côté</td>
       <td>Contrôle moteur de hanche · stabilité du bassin</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/qsyVpKyt8ro" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/qsyVpKyt8ro" target="_blank">Vidéo</a></td>
     </tr>
     <tr>
       <td><strong>Hip Flexion Rotation Interne (élastique)</strong></td>
       <td>2</td><td>10/côté</td>
       <td>Contrôle moteur de hanche · stabilité du bassin</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/mW0QsOGOVUs" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/mW0QsOGOVUs" target="_blank">Vidéo</a></td>
     </tr>
     <tr>
       <td><strong>Spanish Squat</strong></td>
       <td>2</td><td>30" isométrique</td>
       <td>Tendon rotulien · quadriceps · prévention Osgood et douleurs antérieures du genou</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/hNf_anr2rcM" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/hNf_anr2rcM" target="_blank">Vidéo</a></td>
     </tr>
     <tr>
       <td><strong>Extension terminale du genou (élastique)</strong></td>
       <td>2</td><td>15 reps</td>
       <td>Vaste médial · contrôle du verrouillage du genou</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/5OfavmCuyuE" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/5OfavmCuyuE" target="_blank">Vidéo</a></td>
     </tr>
     </tbody></table>
   </div>
@@ -1630,25 +1715,25 @@ const SESSIONS = {
       <td><strong>Split Stance Calf Raise</strong></td>
       <td>2</td><td>15/côté</td>
       <td>Mollet · renfo excentrique cheville</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/ip5KS2LT3pk" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/ip5KS2LT3pk" target="_blank">Vidéo</a></td>
     </tr>
     <tr>
       <td><strong>Inversion contrôlée de cheville</strong></td>
       <td>2</td><td>12 reps</td>
       <td>Prévention entorse externe</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/0Mf1dgN6jsQ" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/0Mf1dgN6jsQ" target="_blank">Vidéo</a></td>
     </tr>
     <tr>
       <td><strong>Marche extension pointe de pieds</strong></td>
       <td>2</td><td>15 m</td>
       <td>Pied · mollets · contrôle cheville</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/ip5KS2LT3pk" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/ip5KS2LT3pk" target="_blank">Vidéo</a></td>
     </tr>
     <tr>
       <td><strong>Extension complète de cheville genoux fléchis</strong></td>
       <td>2</td><td>15 reps</td>
       <td>Soléaire · mobilité de cheville</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/7fRpqdMYV-o" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/7fRpqdMYV-o" target="_blank">Vidéo</a></td>
     </tr>
     </tbody></table>
   </div>
@@ -1664,13 +1749,13 @@ const SESSIONS = {
       <td><strong>Double DB Death March</strong></td>
       <td>2</td><td>10 pas</td>
       <td>Contrôle excentrique ischios · prévention blessures ischio-jambiers</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/z1MlbiKGp_A" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/z1MlbiKGp_A" target="_blank">Vidéo</a></td>
     </tr>
     <tr>
       <td><strong>Hamstring Banded Stretch</strong></td>
       <td>2</td><td>30"/côté</td>
       <td>Contrôle excentrique · prévention blessures ischios</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/z1MlbiKGp_A" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/z1MlbiKGp_A" target="_blank">Vidéo</a></td>
     </tr>
     </tbody></table>
   </div>
@@ -1686,25 +1771,25 @@ const SESSIONS = {
       <td><strong>Toe Touch</strong></td>
       <td>1</td><td>10 reps</td>
       <td>Extension thoracique · dissociation bassin/thorax</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/Fna-gTutGqI" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/Fna-gTutGqI" target="_blank">Vidéo</a></td>
     </tr>
     <tr>
       <td><strong>Quadruped Rotation</strong></td>
       <td>1</td><td>8/côté</td>
       <td>Mobilité thoracique · dissociation bassin/thorax</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/ETynmhN9f_Y" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/ETynmhN9f_Y" target="_blank">Vidéo</a></td>
     </tr>
     <tr>
       <td><strong>Quadruped Contralateral Reach</strong></td>
       <td>1</td><td>10/côté</td>
       <td>Chaîne croisée · stabilité lombaire</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/ETynmhN9f_Y" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/ETynmhN9f_Y" target="_blank">Vidéo</a></td>
     </tr>
     <tr>
       <td><strong>Snow Angel</strong></td>
       <td>1</td><td>10 reps</td>
       <td>Extension thoracique · mobilité scapulaire</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/Aor_BtsXXjo" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/Aor_BtsXXjo" target="_blank">Vidéo</a></td>
     </tr>
     </tbody></table>
   </div>
@@ -1720,19 +1805,19 @@ const SESSIONS = {
       <td><strong>Banded Wall Slide Spider</strong></td>
       <td>2</td><td>10 reps</td>
       <td>Stabilité scapulaire · prévention épaule du handballeur</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/x75hDxFz8ks" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/x75hDxFz8ks" target="_blank">Vidéo</a></td>
     </tr>
     <tr>
       <td><strong>Scapular Push Up</strong></td>
       <td>2</td><td>12 reps</td>
       <td>Stabilité scapulaire</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/watch?v=t2F0f31Ujro" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://www.youtube.com/shorts/SBPRhZI2RkI" target="_blank">Vidéo</a></td>
     </tr>
     <tr>
       <td><strong>Banded Scapular Protraction</strong></td>
       <td>2</td><td>15 reps</td>
       <td>Stabilité scapulaire · prévention épaule du handballeur</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/x75hDxFz8ks" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/x75hDxFz8ks" target="_blank">Vidéo</a></td>
     </tr>
     </tbody></table>
   </div>
@@ -1747,32 +1832,32 @@ const SESSIONS = {
     <tr>
       <td><strong>Étirement psoas / quadriceps</strong></td>
       <td>45"/côté</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/Fna-gTutGqI" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/Fna-gTutGqI" target="_blank">Vidéo</a></td>
     </tr>
     <tr>
       <td><strong>Étirement adducteurs papillon</strong></td>
       <td>45"</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/qhCUQC5QDA8" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/qhCUQC5QDA8" target="_blank">Vidéo</a></td>
     </tr>
     <tr>
       <td><strong>Étirement ischios avec bande</strong></td>
       <td>45"/côté</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/z1MlbiKGp_A" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/z1MlbiKGp_A" target="_blank">Vidéo</a></td>
     </tr>
     <tr>
       <td><strong>Étirement mollets contre un mur</strong></td>
       <td>45"/côté</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/wz4KGu-btP0" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/wz4KGu-btP0" target="_blank">Vidéo</a></td>
     </tr>
     <tr>
       <td><strong>Rotation thoracique allongée</strong></td>
       <td>8 reps/côté</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/ETynmhN9f_Y" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/ETynmhN9f_Y" target="_blank">Vidéo</a></td>
     </tr>
     <tr>
       <td><strong>Position enfant + ouverture latérale</strong></td>
       <td>30"/côté</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/Fna-gTutGqI" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/Fna-gTutGqI" target="_blank">Vidéo</a></td>
     </tr>
     </tbody></table>
   </div>`,
@@ -1793,19 +1878,19 @@ const SESSIONS = {
       <td><strong>Couch Stretch</strong></td>
       <td>2</td><td>30"/côté</td>
       <td>Psoas · droit fémoral · extension de hanche</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/Fna-gTutGqI" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/Fna-gTutGqI" target="_blank">Vidéo</a></td>
     </tr>
     <tr>
       <td><strong>Split Stance Adductor Mob</strong></td>
       <td>1</td><td>10 reps lentes/côté</td>
       <td>Adducteurs · mobilité de l'aine</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/qhCUQC5QDA8" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/qhCUQC5QDA8" target="_blank">Vidéo</a></td>
     </tr>
     <tr>
       <td><strong>90/90 rotation interne / externe</strong></td>
       <td>1</td><td>8 reps/côté</td>
       <td>Rotation interne et externe de hanche · prévention pubalgies</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/25OaAr09j_U" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/25OaAr09j_U" target="_blank">Vidéo</a></td>
     </tr>
     </tbody></table>
   </div>
@@ -1821,25 +1906,25 @@ const SESSIONS = {
       <td><strong>Hip Flexion Rotation Externe (élastique)</strong></td>
       <td>2</td><td>10/côté</td>
       <td>Contrôle moteur de hanche · stabilité du bassin</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/qsyVpKyt8ro" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/qsyVpKyt8ro" target="_blank">Vidéo</a></td>
     </tr>
     <tr>
       <td><strong>Hip Flexion Rotation Interne (élastique)</strong></td>
       <td>2</td><td>10/côté</td>
       <td>Contrôle moteur de hanche · stabilité du bassin</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/mW0QsOGOVUs" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/mW0QsOGOVUs" target="_blank">Vidéo</a></td>
     </tr>
     <tr>
       <td><strong>Spanish Squat</strong></td>
       <td>2</td><td>30" isométrique</td>
       <td>Tendon rotulien · quadriceps · prévention Osgood et douleurs antérieures du genou</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/hNf_anr2rcM" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/hNf_anr2rcM" target="_blank">Vidéo</a></td>
     </tr>
     <tr>
       <td><strong>Extension terminale du genou (élastique)</strong></td>
       <td>2</td><td>15 reps</td>
       <td>Vaste médial · contrôle du verrouillage du genou</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/5OfavmCuyuE" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/5OfavmCuyuE" target="_blank">Vidéo</a></td>
     </tr>
     </tbody></table>
   </div>
@@ -1855,25 +1940,25 @@ const SESSIONS = {
       <td><strong>Split Stance Calf Raise</strong></td>
       <td>2</td><td>15/côté</td>
       <td>Mollet · renfo excentrique cheville</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/ip5KS2LT3pk" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/ip5KS2LT3pk" target="_blank">Vidéo</a></td>
     </tr>
     <tr>
       <td><strong>Inversion contrôlée de cheville</strong></td>
       <td>2</td><td>12 reps</td>
       <td>Prévention entorse externe</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/0Mf1dgN6jsQ" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/0Mf1dgN6jsQ" target="_blank">Vidéo</a></td>
     </tr>
     <tr>
       <td><strong>Marche extension pointe de pieds</strong></td>
       <td>2</td><td>15 m</td>
       <td>Pied · mollets · contrôle cheville</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/ip5KS2LT3pk" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/ip5KS2LT3pk" target="_blank">Vidéo</a></td>
     </tr>
     <tr>
       <td><strong>Extension complète de cheville genoux fléchis</strong></td>
       <td>2</td><td>15 reps</td>
       <td>Soléaire · mobilité de cheville</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/7fRpqdMYV-o" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/7fRpqdMYV-o" target="_blank">Vidéo</a></td>
     </tr>
     </tbody></table>
   </div>
@@ -1889,13 +1974,13 @@ const SESSIONS = {
       <td><strong>Double DB Death March</strong></td>
       <td>2</td><td>10 pas</td>
       <td>Contrôle excentrique ischios · prévention blessures ischio-jambiers</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/z1MlbiKGp_A" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/z1MlbiKGp_A" target="_blank">Vidéo</a></td>
     </tr>
     <tr>
       <td><strong>Hamstring Banded Stretch</strong></td>
       <td>2</td><td>30"/côté</td>
       <td>Contrôle excentrique · prévention blessures ischios</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/z1MlbiKGp_A" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/z1MlbiKGp_A" target="_blank">Vidéo</a></td>
     </tr>
     </tbody></table>
   </div>
@@ -1911,25 +1996,25 @@ const SESSIONS = {
       <td><strong>Toe Touch</strong></td>
       <td>1</td><td>10 reps</td>
       <td>Extension thoracique · dissociation bassin/thorax</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/Fna-gTutGqI" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/Fna-gTutGqI" target="_blank">Vidéo</a></td>
     </tr>
     <tr>
       <td><strong>Quadruped Rotation</strong></td>
       <td>1</td><td>8/côté</td>
       <td>Mobilité thoracique · dissociation bassin/thorax</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/ETynmhN9f_Y" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/ETynmhN9f_Y" target="_blank">Vidéo</a></td>
     </tr>
     <tr>
       <td><strong>Quadruped Contralateral Reach</strong></td>
       <td>1</td><td>10/côté</td>
       <td>Chaîne croisée · stabilité lombaire</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/ETynmhN9f_Y" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/ETynmhN9f_Y" target="_blank">Vidéo</a></td>
     </tr>
     <tr>
       <td><strong>Snow Angel</strong></td>
       <td>1</td><td>10 reps</td>
       <td>Extension thoracique · mobilité scapulaire</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/Aor_BtsXXjo" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/Aor_BtsXXjo" target="_blank">Vidéo</a></td>
     </tr>
     </tbody></table>
   </div>
@@ -1945,19 +2030,19 @@ const SESSIONS = {
       <td><strong>Banded Wall Slide Spider</strong></td>
       <td>2</td><td>10 reps</td>
       <td>Stabilité scapulaire · prévention épaule du handballeur</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/x75hDxFz8ks" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/x75hDxFz8ks" target="_blank">Vidéo</a></td>
     </tr>
     <tr>
       <td><strong>Scapular Push Up</strong></td>
       <td>2</td><td>12 reps</td>
       <td>Stabilité scapulaire</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/watch?v=t2F0f31Ujro" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://www.youtube.com/shorts/SBPRhZI2RkI" target="_blank">Vidéo</a></td>
     </tr>
     <tr>
       <td><strong>Banded Scapular Protraction</strong></td>
       <td>2</td><td>15 reps</td>
       <td>Stabilité scapulaire · prévention épaule du handballeur</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/x75hDxFz8ks" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/x75hDxFz8ks" target="_blank">Vidéo</a></td>
     </tr>
     </tbody></table>
   </div>
@@ -1972,32 +2057,32 @@ const SESSIONS = {
     <tr>
       <td><strong>Étirement psoas / quadriceps</strong></td>
       <td>45"/côté</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/Fna-gTutGqI" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/Fna-gTutGqI" target="_blank">Vidéo</a></td>
     </tr>
     <tr>
       <td><strong>Étirement adducteurs papillon</strong></td>
       <td>45"</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/qhCUQC5QDA8" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/qhCUQC5QDA8" target="_blank">Vidéo</a></td>
     </tr>
     <tr>
       <td><strong>Étirement ischios avec bande</strong></td>
       <td>45"/côté</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/z1MlbiKGp_A" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/z1MlbiKGp_A" target="_blank">Vidéo</a></td>
     </tr>
     <tr>
       <td><strong>Étirement mollets contre un mur</strong></td>
       <td>45"/côté</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/wz4KGu-btP0" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/wz4KGu-btP0" target="_blank">Vidéo</a></td>
     </tr>
     <tr>
       <td><strong>Rotation thoracique allongée</strong></td>
       <td>8 reps/côté</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/ETynmhN9f_Y" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/ETynmhN9f_Y" target="_blank">Vidéo</a></td>
     </tr>
     <tr>
       <td><strong>Position enfant + ouverture latérale</strong></td>
       <td>30"/côté</td>
-      <td><a class="vid-btn" href="https://www.youtube.com/shorts/Fna-gTutGqI" target="_blank">Vidéo</a></td>
+      <td><a class="vid-btn" href="https://youtube.com/shorts/Fna-gTutGqI" target="_blank">Vidéo</a></td>
     </tr>
     </tbody></table>
   </div>`,
@@ -2065,11 +2150,11 @@ const SESSIONS = {
       <div style="font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:700;color:#c9a227;text-transform:uppercase;letter-spacing:.05em;">Mobilité préparatoire · 6 min</div>
     </div>
     <table class="exo-table"><thead><tr><th>Exercice</th><th>Séries</th><th>Reps / Durée</th><th>Objectif</th><th>Lien</th></tr></thead><tbody>
-    <tr><td><strong>Couch Stretch</strong></td><td>2</td><td>45"/côté</td><td>Psoas · quadriceps · extension de hanche</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/Fna-gTutGqI" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>90/90 Rotation interne / externe</strong></td><td>1</td><td>10 reps lentes/côté</td><td>Mobilité de hanche indispensable aux changements d'appuis</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/25OaAr09j_U" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>Half Kneeling Adductor Slide</strong></td><td>1</td><td>10 reps/côté</td><td>Adducteurs · aine · prévention pubalgie</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/qhCUQC5QDA8" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>Quadruped Rotation</strong></td><td>1</td><td>8 reps/côté</td><td>Mobilité thoracique</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/ETynmhN9f_Y" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>Snow Angel</strong></td><td>1</td><td>10 reps</td><td>Mobilité thoracique · qualité du tir et des rotations</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/Aor_BtsXXjo" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Couch Stretch</strong></td><td>2</td><td>45"/côté</td><td>Psoas · quadriceps · extension de hanche</td><td><a class="vid-btn" href="https://youtube.com/shorts/Fna-gTutGqI" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>90/90 Rotation interne / externe</strong></td><td>1</td><td>10 reps lentes/côté</td><td>Mobilité de hanche indispensable aux changements d'appuis</td><td><a class="vid-btn" href="https://youtube.com/shorts/25OaAr09j_U" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Half Kneeling Adductor Slide</strong></td><td>1</td><td>10 reps/côté</td><td>Adducteurs · aine · prévention pubalgie</td><td><a class="vid-btn" href="https://youtube.com/shorts/qhCUQC5QDA8" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Quadruped Rotation</strong></td><td>1</td><td>8 reps/côté</td><td>Mobilité thoracique</td><td><a class="vid-btn" href="https://youtube.com/shorts/ETynmhN9f_Y" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Snow Angel</strong></td><td>1</td><td>10 reps</td><td>Mobilité thoracique · qualité du tir et des rotations</td><td><a class="vid-btn" href="https://youtube.com/shorts/Aor_BtsXXjo" target="_blank">Vidéo</a></td></tr>
     </tbody></table>
   </div>
 
@@ -2081,9 +2166,9 @@ const SESSIONS = {
     </div>
     <table class="exo-table"><thead><tr><th>Exercice</th><th>Séries</th><th>Reps / Durée</th><th>Objectif</th><th>Lien</th></tr></thead><tbody>
     <tr><td><strong>Copenhagen Plank genou</strong><br><span style="font-size:.72rem;color:#888;">→ S3 : version cheville</span></td><td>3</td><td>20"/côté</td><td>Adducteurs · prévention pubalgie</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/Rwap0_j5i5A" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>Abduction + flexion de hanche mini-band</strong></td><td>2</td><td>12/côté</td><td>Contrôle du bassin lors des changements de direction</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/-mawhfyy0TA" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>Hip Flexion Rotation Externe (élastique)</strong></td><td>2</td><td>10/côté</td><td>Contrôle moteur de hanche</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/qsyVpKyt8ro" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>Hip Flexion Rotation Interne (élastique)</strong></td><td>2</td><td>10/côté</td><td>Contrôle moteur de hanche</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/mW0QsOGOVUs" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Abduction + flexion de hanche mini-band</strong></td><td>2</td><td>12/côté</td><td>Contrôle du bassin lors des changements de direction</td><td><a class="vid-btn" href="https://youtube.com/shorts/-mawhfyy0TA" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Hip Flexion Rotation Externe (élastique)</strong></td><td>2</td><td>10/côté</td><td>Contrôle moteur de hanche</td><td><a class="vid-btn" href="https://youtube.com/shorts/qsyVpKyt8ro" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Hip Flexion Rotation Interne (élastique)</strong></td><td>2</td><td>10/côté</td><td>Contrôle moteur de hanche</td><td><a class="vid-btn" href="https://youtube.com/shorts/mW0QsOGOVUs" target="_blank">Vidéo</a></td></tr>
     </tbody></table>
   </div>
 
@@ -2094,7 +2179,7 @@ const SESSIONS = {
       <div style="font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:700;color:#c9a227;text-transform:uppercase;letter-spacing:.05em;">Prévention tendon rotulien et LCA · 7 min</div>
     </div>
     <table class="exo-table"><thead><tr><th>Exercice</th><th>Séries</th><th>Reps / Durée</th><th>Objectif</th><th>Lien</th></tr></thead><tbody>
-    <tr><td><strong>Spanish Squat isométrique</strong></td><td>4</td><td>30"</td><td>Tendon rotulien · quadriceps</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/hNf_anr2rcM" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Spanish Squat isométrique</strong></td><td>4</td><td>30"</td><td>Tendon rotulien · quadriceps</td><td><a class="vid-btn" href="https://youtube.com/shorts/hNf_anr2rcM" target="_blank">Vidéo</a></td></tr>
     <tr><td><strong>Banded Step Down</strong></td><td>3</td><td>8/côté</td><td>Contrôle du valgus dynamique</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/7t-vJ9SboYA" target="_blank">Vidéo</a></td></tr>
     <tr><td><strong>Banded Lunge</strong></td><td>3</td><td>8/côté</td><td>Stabilité genou/hanche lors des freinages</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/3vPSbwM0MTQ" target="_blank">Vidéo</a></td></tr>
     <tr><td><strong>KB Isometric Step Down Position</strong></td><td>2</td><td>20"/côté</td><td>Contrôle proprioceptif et stabilité du genou</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/7t-vJ9SboYA" target="_blank">Vidéo</a></td></tr>
@@ -2108,10 +2193,10 @@ const SESSIONS = {
       <div style="font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:700;color:#c9a227;text-transform:uppercase;letter-spacing:.05em;">Prévention cheville et pied · 5 min</div>
     </div>
     <table class="exo-table"><thead><tr><th>Exercice</th><th>Séries</th><th>Reps / Durée</th><th>Objectif</th><th>Lien</th></tr></thead><tbody>
-    <tr><td><strong>Split Stance Calf Raise</strong></td><td>3</td><td>15/côté</td><td>Mollet · renfo excentrique cheville</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/ip5KS2LT3pk" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>Inversion contrôlée de cheville</strong></td><td>2</td><td>15 reps</td><td>Prévention entorse externe</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/0Mf1dgN6jsQ" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>Towel Crunch</strong></td><td>2</td><td>20"</td><td>Muscles intrinsèques du pied</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/_6hnB46zJrw" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>Marche extension pointe de pied</strong></td><td>2</td><td>20 m</td><td>Pied · mollets · contrôle cheville</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/ip5KS2LT3pk" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Split Stance Calf Raise</strong></td><td>3</td><td>15/côté</td><td>Mollet · renfo excentrique cheville</td><td><a class="vid-btn" href="https://youtube.com/shorts/ip5KS2LT3pk" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Inversion contrôlée de cheville</strong></td><td>2</td><td>15 reps</td><td>Prévention entorse externe</td><td><a class="vid-btn" href="https://youtube.com/shorts/0Mf1dgN6jsQ" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Towel Crunch</strong></td><td>2</td><td>20"</td><td>Muscles intrinsèques du pied</td><td><a class="vid-btn" href="https://youtube.com/shorts/_6hnB46zJrw" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Marche extension pointe de pied</strong></td><td>2</td><td>20 m</td><td>Pied · mollets · contrôle cheville</td><td><a class="vid-btn" href="https://youtube.com/shorts/ip5KS2LT3pk" target="_blank">Vidéo</a></td></tr>
     </tbody></table>
   </div>
 
@@ -2122,9 +2207,9 @@ const SESSIONS = {
       <div style="font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:700;color:#c9a227;text-transform:uppercase;letter-spacing:.05em;">Prévention ischios · 4 min</div>
     </div>
     <table class="exo-table"><thead><tr><th>Exercice</th><th>Séries</th><th>Reps / Durée</th><th>Objectif</th><th>Lien</th></tr></thead><tbody>
-    <tr><td><strong>Double DB Death March</strong></td><td>2</td><td>12 pas</td><td>Contrôle excentrique · chaîne postérieure</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/z1MlbiKGp_A" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>Hamstring Banded Stretch</strong></td><td>2</td><td>30"/côté</td><td>Prévention blessures ischios</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/z1MlbiKGp_A" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>SL RDL avec rotation latérale</strong></td><td>2</td><td>8/côté</td><td>Contrôle excentrique · chaîne postérieure · stabilité pelvienne</td><td><a class="vid-btn" href="https://www.youtube.com/watch?v=FgJjp4uCzAQ" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Double DB Death March</strong></td><td>2</td><td>12 pas</td><td>Contrôle excentrique · chaîne postérieure</td><td><a class="vid-btn" href="https://youtube.com/shorts/z1MlbiKGp_A" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Hamstring Banded Stretch</strong></td><td>2</td><td>30"/côté</td><td>Prévention blessures ischios</td><td><a class="vid-btn" href="https://youtube.com/shorts/z1MlbiKGp_A" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>SL RDL avec rotation latérale</strong></td><td>2</td><td>8/côté</td><td>Contrôle excentrique · chaîne postérieure · stabilité pelvienne</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/W1eny2AkrnE" target="_blank">Vidéo</a></td></tr>
     </tbody></table>
   </div>
 
@@ -2135,10 +2220,10 @@ const SESSIONS = {
       <div style="font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:700;color:#c9a227;text-transform:uppercase;letter-spacing:.05em;">Prévention épaule du handballeur · 5 min</div>
     </div>
     <table class="exo-table"><thead><tr><th>Exercice</th><th>Séries</th><th>Reps</th><th>Objectif</th><th>Lien</th></tr></thead><tbody>
-    <tr><td><strong>Banded Wall Slide Spider</strong></td><td>2</td><td>12</td><td>Stabilité scapulaire · prévention conflit sous-acromial</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/x75hDxFz8ks" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>Scapular Push Up</strong></td><td>2</td><td>15</td><td>Stabilité scapulaire</td><td><a class="vid-btn" href="https://www.youtube.com/watch?v=t2F0f31Ujro" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>Banded Scapular Protraction</strong></td><td>2</td><td>15</td><td>Stabilité scapulaire</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/x75hDxFz8ks" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>Standing Band Y-T-W</strong></td><td>2</td><td>8 reps/lettre</td><td>Stabilité scapulaire · prévention conflit sous-acromial · amélioration décélération du bras après le tir</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/Aor_BtsXXjo" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Banded Wall Slide Spider</strong></td><td>2</td><td>12</td><td>Stabilité scapulaire · prévention conflit sous-acromial</td><td><a class="vid-btn" href="https://youtube.com/shorts/x75hDxFz8ks" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Scapular Push Up</strong></td><td>2</td><td>15</td><td>Stabilité scapulaire</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/SBPRhZI2RkI" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Banded Scapular Protraction</strong></td><td>2</td><td>15</td><td>Stabilité scapulaire</td><td><a class="vid-btn" href="https://youtube.com/shorts/x75hDxFz8ks" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Standing Band Y-T-W</strong></td><td>2</td><td>8 reps/lettre</td><td>Stabilité scapulaire · prévention conflit sous-acromial · amélioration décélération du bras après le tir</td><td><a class="vid-btn" href="https://youtube.com/shorts/Aor_BtsXXjo" target="_blank">Vidéo</a></td></tr>
     </tbody></table>
   </div>
 
@@ -2149,13 +2234,13 @@ const SESSIONS = {
       <div style="font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:700;color:#10b981;text-transform:uppercase;letter-spacing:.05em;">Étirements de récupération · 8 min</div>
     </div>
     <table class="exo-table"><thead><tr><th>Exercice</th><th>Durée</th><th>Lien</th></tr></thead><tbody>
-    <tr><td><strong>Psoas / quadriceps</strong></td><td>45"/côté</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/Fna-gTutGqI" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>Adducteurs</strong></td><td>45"</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/qhCUQC5QDA8" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>Ischios avec élastique</strong></td><td>45"/côté</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/z1MlbiKGp_A" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>Mollets gastrocnémien</strong></td><td>45"/côté</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/wz4KGu-btP0" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>Soléaire genou fléchi</strong></td><td>45"/côté</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/7fRpqdMYV-o" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>Rotation thoracique allongée</strong></td><td>8 reps/côté</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/ETynmhN9f_Y" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>Étirement grand dorsal contre mur</strong></td><td>30"/côté</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/x75hDxFz8ks" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Psoas / quadriceps</strong></td><td>45"/côté</td><td><a class="vid-btn" href="https://youtube.com/shorts/Fna-gTutGqI" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Adducteurs</strong></td><td>45"</td><td><a class="vid-btn" href="https://youtube.com/shorts/qhCUQC5QDA8" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Ischios avec élastique</strong></td><td>45"/côté</td><td><a class="vid-btn" href="https://youtube.com/shorts/z1MlbiKGp_A" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Mollets gastrocnémien</strong></td><td>45"/côté</td><td><a class="vid-btn" href="https://youtube.com/shorts/wz4KGu-btP0" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Soléaire genou fléchi</strong></td><td>45"/côté</td><td><a class="vid-btn" href="https://youtube.com/shorts/7fRpqdMYV-o" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Rotation thoracique allongée</strong></td><td>8 reps/côté</td><td><a class="vid-btn" href="https://youtube.com/shorts/ETynmhN9f_Y" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Étirement grand dorsal contre mur</strong></td><td>30"/côté</td><td><a class="vid-btn" href="https://youtube.com/shorts/x75hDxFz8ks" target="_blank">Vidéo</a></td></tr>
     </tbody></table>
   </div>`,
 
@@ -2172,11 +2257,11 @@ const SESSIONS = {
       <div style="font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:700;color:#c9a227;text-transform:uppercase;letter-spacing:.05em;">Mobilité préparatoire · 6 min</div>
     </div>
     <table class="exo-table"><thead><tr><th>Exercice</th><th>Séries</th><th>Reps / Durée</th><th>Objectif</th><th>Lien</th></tr></thead><tbody>
-    <tr><td><strong>Couch Stretch</strong></td><td>2</td><td>45"/côté</td><td>Psoas · quadriceps · extension de hanche</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/Fna-gTutGqI" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>90/90 Rotation interne / externe</strong></td><td>1</td><td>10 reps lentes/côté</td><td>Mobilité de hanche indispensable aux changements d'appuis</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/25OaAr09j_U" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>Half Kneeling Adductor Slide</strong></td><td>1</td><td>10 reps/côté</td><td>Adducteurs · aine · prévention pubalgie</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/qhCUQC5QDA8" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>Quadruped Rotation</strong></td><td>1</td><td>8 reps/côté</td><td>Mobilité thoracique</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/ETynmhN9f_Y" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>Snow Angel</strong></td><td>1</td><td>10 reps</td><td>Mobilité thoracique · qualité du tir et des rotations</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/Aor_BtsXXjo" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Couch Stretch</strong></td><td>2</td><td>45"/côté</td><td>Psoas · quadriceps · extension de hanche</td><td><a class="vid-btn" href="https://youtube.com/shorts/Fna-gTutGqI" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>90/90 Rotation interne / externe</strong></td><td>1</td><td>10 reps lentes/côté</td><td>Mobilité de hanche indispensable aux changements d'appuis</td><td><a class="vid-btn" href="https://youtube.com/shorts/25OaAr09j_U" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Half Kneeling Adductor Slide</strong></td><td>1</td><td>10 reps/côté</td><td>Adducteurs · aine · prévention pubalgie</td><td><a class="vid-btn" href="https://youtube.com/shorts/qhCUQC5QDA8" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Quadruped Rotation</strong></td><td>1</td><td>8 reps/côté</td><td>Mobilité thoracique</td><td><a class="vid-btn" href="https://youtube.com/shorts/ETynmhN9f_Y" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Snow Angel</strong></td><td>1</td><td>10 reps</td><td>Mobilité thoracique · qualité du tir et des rotations</td><td><a class="vid-btn" href="https://youtube.com/shorts/Aor_BtsXXjo" target="_blank">Vidéo</a></td></tr>
     </tbody></table>
   </div>
 
@@ -2188,9 +2273,9 @@ const SESSIONS = {
     </div>
     <table class="exo-table"><thead><tr><th>Exercice</th><th>Séries</th><th>Reps / Durée</th><th>Objectif</th><th>Lien</th></tr></thead><tbody>
     <tr><td><strong>Copenhagen Plank genou</strong><br><span style="font-size:.72rem;color:#888;">→ S3 : version cheville</span></td><td>3</td><td>20"/côté</td><td>Adducteurs · prévention pubalgie</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/Rwap0_j5i5A" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>Abduction + flexion de hanche mini-band</strong></td><td>2</td><td>12/côté</td><td>Contrôle du bassin lors des changements de direction</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/-mawhfyy0TA" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>Hip Flexion Rotation Externe (élastique)</strong></td><td>2</td><td>10/côté</td><td>Contrôle moteur de hanche</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/qsyVpKyt8ro" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>Hip Flexion Rotation Interne (élastique)</strong></td><td>2</td><td>10/côté</td><td>Contrôle moteur de hanche</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/mW0QsOGOVUs" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Abduction + flexion de hanche mini-band</strong></td><td>2</td><td>12/côté</td><td>Contrôle du bassin lors des changements de direction</td><td><a class="vid-btn" href="https://youtube.com/shorts/-mawhfyy0TA" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Hip Flexion Rotation Externe (élastique)</strong></td><td>2</td><td>10/côté</td><td>Contrôle moteur de hanche</td><td><a class="vid-btn" href="https://youtube.com/shorts/qsyVpKyt8ro" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Hip Flexion Rotation Interne (élastique)</strong></td><td>2</td><td>10/côté</td><td>Contrôle moteur de hanche</td><td><a class="vid-btn" href="https://youtube.com/shorts/mW0QsOGOVUs" target="_blank">Vidéo</a></td></tr>
     </tbody></table>
   </div>
 
@@ -2201,7 +2286,7 @@ const SESSIONS = {
       <div style="font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:700;color:#c9a227;text-transform:uppercase;letter-spacing:.05em;">Prévention tendon rotulien et LCA · 7 min</div>
     </div>
     <table class="exo-table"><thead><tr><th>Exercice</th><th>Séries</th><th>Reps / Durée</th><th>Objectif</th><th>Lien</th></tr></thead><tbody>
-    <tr><td><strong>Spanish Squat isométrique</strong></td><td>4</td><td>30"</td><td>Tendon rotulien · quadriceps</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/hNf_anr2rcM" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Spanish Squat isométrique</strong></td><td>4</td><td>30"</td><td>Tendon rotulien · quadriceps</td><td><a class="vid-btn" href="https://youtube.com/shorts/hNf_anr2rcM" target="_blank">Vidéo</a></td></tr>
     <tr><td><strong>Banded Step Down</strong></td><td>3</td><td>8/côté</td><td>Contrôle du valgus dynamique</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/7t-vJ9SboYA" target="_blank">Vidéo</a></td></tr>
     <tr><td><strong>Banded Lunge</strong></td><td>3</td><td>8/côté</td><td>Stabilité genou/hanche lors des freinages</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/3vPSbwM0MTQ" target="_blank">Vidéo</a></td></tr>
     <tr><td><strong>KB Isometric Step Down Position</strong></td><td>2</td><td>20"/côté</td><td>Contrôle proprioceptif et stabilité du genou</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/7t-vJ9SboYA" target="_blank">Vidéo</a></td></tr>
@@ -2215,10 +2300,10 @@ const SESSIONS = {
       <div style="font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:700;color:#c9a227;text-transform:uppercase;letter-spacing:.05em;">Prévention cheville et pied · 5 min</div>
     </div>
     <table class="exo-table"><thead><tr><th>Exercice</th><th>Séries</th><th>Reps / Durée</th><th>Objectif</th><th>Lien</th></tr></thead><tbody>
-    <tr><td><strong>Split Stance Calf Raise</strong></td><td>3</td><td>15/côté</td><td>Mollet · renfo excentrique cheville</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/ip5KS2LT3pk" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>Inversion contrôlée de cheville</strong></td><td>2</td><td>15 reps</td><td>Prévention entorse externe</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/0Mf1dgN6jsQ" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>Towel Crunch</strong></td><td>2</td><td>20"</td><td>Muscles intrinsèques du pied</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/_6hnB46zJrw" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>Marche extension pointe de pied</strong></td><td>2</td><td>20 m</td><td>Pied · mollets · contrôle cheville</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/ip5KS2LT3pk" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Split Stance Calf Raise</strong></td><td>3</td><td>15/côté</td><td>Mollet · renfo excentrique cheville</td><td><a class="vid-btn" href="https://youtube.com/shorts/ip5KS2LT3pk" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Inversion contrôlée de cheville</strong></td><td>2</td><td>15 reps</td><td>Prévention entorse externe</td><td><a class="vid-btn" href="https://youtube.com/shorts/0Mf1dgN6jsQ" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Towel Crunch</strong></td><td>2</td><td>20"</td><td>Muscles intrinsèques du pied</td><td><a class="vid-btn" href="https://youtube.com/shorts/_6hnB46zJrw" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Marche extension pointe de pied</strong></td><td>2</td><td>20 m</td><td>Pied · mollets · contrôle cheville</td><td><a class="vid-btn" href="https://youtube.com/shorts/ip5KS2LT3pk" target="_blank">Vidéo</a></td></tr>
     </tbody></table>
   </div>
 
@@ -2229,9 +2314,9 @@ const SESSIONS = {
       <div style="font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:700;color:#c9a227;text-transform:uppercase;letter-spacing:.05em;">Prévention ischios · 4 min</div>
     </div>
     <table class="exo-table"><thead><tr><th>Exercice</th><th>Séries</th><th>Reps / Durée</th><th>Objectif</th><th>Lien</th></tr></thead><tbody>
-    <tr><td><strong>Double DB Death March</strong></td><td>2</td><td>12 pas</td><td>Contrôle excentrique · chaîne postérieure</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/z1MlbiKGp_A" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>Hamstring Banded Stretch</strong></td><td>2</td><td>30"/côté</td><td>Prévention blessures ischios</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/z1MlbiKGp_A" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>SL RDL avec rotation latérale</strong></td><td>2</td><td>8/côté</td><td>Contrôle excentrique · chaîne postérieure · stabilité pelvienne</td><td><a class="vid-btn" href="https://www.youtube.com/watch?v=FgJjp4uCzAQ" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Double DB Death March</strong></td><td>2</td><td>12 pas</td><td>Contrôle excentrique · chaîne postérieure</td><td><a class="vid-btn" href="https://youtube.com/shorts/z1MlbiKGp_A" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Hamstring Banded Stretch</strong></td><td>2</td><td>30"/côté</td><td>Prévention blessures ischios</td><td><a class="vid-btn" href="https://youtube.com/shorts/z1MlbiKGp_A" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>SL RDL avec rotation latérale</strong></td><td>2</td><td>8/côté</td><td>Contrôle excentrique · chaîne postérieure · stabilité pelvienne</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/W1eny2AkrnE" target="_blank">Vidéo</a></td></tr>
     </tbody></table>
   </div>
 
@@ -2242,10 +2327,10 @@ const SESSIONS = {
       <div style="font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:700;color:#c9a227;text-transform:uppercase;letter-spacing:.05em;">Prévention épaule du handballeur · 5 min</div>
     </div>
     <table class="exo-table"><thead><tr><th>Exercice</th><th>Séries</th><th>Reps</th><th>Objectif</th><th>Lien</th></tr></thead><tbody>
-    <tr><td><strong>Banded Wall Slide Spider</strong></td><td>2</td><td>12</td><td>Stabilité scapulaire · prévention conflit sous-acromial</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/x75hDxFz8ks" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>Scapular Push Up</strong></td><td>2</td><td>15</td><td>Stabilité scapulaire</td><td><a class="vid-btn" href="https://www.youtube.com/watch?v=t2F0f31Ujro" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>Banded Scapular Protraction</strong></td><td>2</td><td>15</td><td>Stabilité scapulaire</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/x75hDxFz8ks" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>Standing Band Y-T-W</strong></td><td>2</td><td>8 reps/lettre</td><td>Stabilité scapulaire · prévention conflit sous-acromial · amélioration décélération du bras après le tir</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/Aor_BtsXXjo" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Banded Wall Slide Spider</strong></td><td>2</td><td>12</td><td>Stabilité scapulaire · prévention conflit sous-acromial</td><td><a class="vid-btn" href="https://youtube.com/shorts/x75hDxFz8ks" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Scapular Push Up</strong></td><td>2</td><td>15</td><td>Stabilité scapulaire</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/SBPRhZI2RkI" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Banded Scapular Protraction</strong></td><td>2</td><td>15</td><td>Stabilité scapulaire</td><td><a class="vid-btn" href="https://youtube.com/shorts/x75hDxFz8ks" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Standing Band Y-T-W</strong></td><td>2</td><td>8 reps/lettre</td><td>Stabilité scapulaire · prévention conflit sous-acromial · amélioration décélération du bras après le tir</td><td><a class="vid-btn" href="https://youtube.com/shorts/Aor_BtsXXjo" target="_blank">Vidéo</a></td></tr>
     </tbody></table>
   </div>
 
@@ -2256,13 +2341,13 @@ const SESSIONS = {
       <div style="font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:700;color:#10b981;text-transform:uppercase;letter-spacing:.05em;">Étirements de récupération · 8 min</div>
     </div>
     <table class="exo-table"><thead><tr><th>Exercice</th><th>Durée</th><th>Lien</th></tr></thead><tbody>
-    <tr><td><strong>Psoas / quadriceps</strong></td><td>45"/côté</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/Fna-gTutGqI" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>Adducteurs</strong></td><td>45"</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/qhCUQC5QDA8" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>Ischios avec élastique</strong></td><td>45"/côté</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/z1MlbiKGp_A" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>Mollets gastrocnémien</strong></td><td>45"/côté</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/wz4KGu-btP0" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>Soléaire genou fléchi</strong></td><td>45"/côté</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/7fRpqdMYV-o" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>Rotation thoracique allongée</strong></td><td>8 reps/côté</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/ETynmhN9f_Y" target="_blank">Vidéo</a></td></tr>
-    <tr><td><strong>Étirement grand dorsal contre mur</strong></td><td>30"/côté</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/x75hDxFz8ks" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Psoas / quadriceps</strong></td><td>45"/côté</td><td><a class="vid-btn" href="https://youtube.com/shorts/Fna-gTutGqI" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Adducteurs</strong></td><td>45"</td><td><a class="vid-btn" href="https://youtube.com/shorts/qhCUQC5QDA8" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Ischios avec élastique</strong></td><td>45"/côté</td><td><a class="vid-btn" href="https://youtube.com/shorts/z1MlbiKGp_A" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Mollets gastrocnémien</strong></td><td>45"/côté</td><td><a class="vid-btn" href="https://youtube.com/shorts/wz4KGu-btP0" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Soléaire genou fléchi</strong></td><td>45"/côté</td><td><a class="vid-btn" href="https://youtube.com/shorts/7fRpqdMYV-o" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Rotation thoracique allongée</strong></td><td>8 reps/côté</td><td><a class="vid-btn" href="https://youtube.com/shorts/ETynmhN9f_Y" target="_blank">Vidéo</a></td></tr>
+    <tr><td><strong>Étirement grand dorsal contre mur</strong></td><td>30"/côté</td><td><a class="vid-btn" href="https://youtube.com/shorts/x75hDxFz8ks" target="_blank">Vidéo</a></td></tr>
     </tbody></table>
   </div>`,
 
