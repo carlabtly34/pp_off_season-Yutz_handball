@@ -147,14 +147,14 @@ footer{border-top:1px solid #222;padding:18px 40px;text-align:center;font-size:.
       <div class="group-card" onclick="openModal('15reg')">
         <div class="card-icon">⚡</div>
         <div class="card-name">−15 Régions</div>
-        <div class="card-sub">5 semaines · 29 juin – 2 août</div>
+        <div class="card-sub">7 semaines · 29 juin – 16 août</div>
         <div class="card-lock">🔒 Accès sécurisé</div>
         <div class="card-arrow">→</div>
       </div>
       <div class="group-card" onclick="openModal('15pole')">
         <div class="card-icon">🎯</div>
         <div class="card-name">OBJ Pôle</div>
-        <div class="card-sub">−15 · 5 semaines · 29 juin – 2 août</div>
+        <div class="card-sub">−15 · 7 semaines · 29 juin – 16 août</div>
         <div class="card-lock">🔒 Accès sécurisé</div>
         <div class="card-arrow">→</div>
       </div>
@@ -240,7 +240,9 @@ const WEEK_NAMES = [
   { n:2, name:'Travail de fond' },
   { n:3, name:'Intensification' },
   { n:4, name:'Intensification ++' },
-  { n:5, name:'Consolidation' }
+  { n:5, name:'Consolidation' },
+  { n:6, name:'Intensification · 3–9 août' },
+  { n:7, name:'Intensification · 10–16 août' }
 ];
 
 // =====================================================================
@@ -342,6 +344,27 @@ const CALENDARS = {
       [{s:'vitesse-reg',t:'wod',label:'Bloc vitesse/sprint'}],
       [{s:'mob-a',t:'mob',label:'Protocole prévention'}]
     ]
+  ,
+
+    [
+      [{s:'plio-reg',t:'plio',label:'Pliométrie'}],
+      [{s:'run-ef5-s5',t:'run',label:'EF 45 min'},{s:'gac1',t:'gac',label:'GAC 1 — Gainage global'}],
+      [{s:'wod1-reg',t:'wod',label:'WOD 1'}],
+      [{s:'vitesse-reg',t:'wod',label:'Bloc vitesse/sprint'}],
+      [{s:'mob-a',t:'mob',label:'Protocole prévention'},{s:'gac2',t:'gac',label:'GAC 2 — Anti-rotation'}],
+      [{s:'mob-a',t:'mob',label:'Protocole prévention'}],
+      []
+    ],
+
+    [
+      [{s:'plio-reg',t:'plio',label:'Pliométrie'}],
+      [{s:'run-ef5-s5',t:'run',label:'EF 45 min'},{s:'gac3',t:'gac',label:'GAC 3 — Flexion tronc'}],
+      [{s:'wod2-reg',t:'wod',label:'WOD 2'}],
+      [{s:'vitesse-reg',t:'wod',label:'Bloc vitesse/sprint'}],
+      [{s:'mob-a',t:'mob',label:'Protocole prévention'},{s:'gac4',t:'gac',label:'GAC 4 — Chaîne croisée'}],
+      [{s:'mob-a',t:'mob',label:'Protocole prévention'}],
+      []
+    ]
   ],
 
   '15pole':   [
@@ -389,6 +412,27 @@ const CALENDARS = {
       [{s:'mob-a',t:'mob',label:'Protocole prévention'},{s:'gac5',t:'gac',label:'GAC 5 — Stabilité dyn.'}],
       [{s:'vitesse-reg',t:'wod',label:'Bloc vitesse/sprint'}],
       [{s:'mob-a',t:'mob',label:'Protocole prévention'}]
+    ]
+  ,
+
+    [
+      [{s:'plio-reg',t:'plio',label:'Pliométrie'}],
+      [{s:'run-ef5-s5',t:'run',label:'EF 45 min'},{s:'gac1',t:'gac',label:'GAC 1 — Gainage global'}],
+      [{s:'wod1-reg',t:'wod',label:'WOD 1'}],
+      [{s:'vitesse-reg',t:'wod',label:'Bloc vitesse/sprint'}],
+      [{s:'mob-a',t:'mob',label:'Protocole prévention'},{s:'gac2',t:'gac',label:'GAC 2 — Anti-rotation'}],
+      [{s:'mob-a',t:'mob',label:'Protocole prévention'}],
+      []
+    ],
+
+    [
+      [{s:'plio-reg',t:'plio',label:'Pliométrie'}],
+      [{s:'run-ef5-s5',t:'run',label:'EF 45 min'},{s:'gac3',t:'gac',label:'GAC 3 — Flexion tronc'}],
+      [{s:'wod2-reg',t:'wod',label:'WOD 2'}],
+      [{s:'vitesse-reg',t:'wod',label:'Bloc vitesse/sprint'}],
+      [{s:'mob-a',t:'mob',label:'Protocole prévention'},{s:'gac4',t:'gac',label:'GAC 4 — Chaîne croisée'}],
+      [{s:'mob-a',t:'mob',label:'Protocole prévention'}],
+      []
     ]
   ]
 };
@@ -1146,17 +1190,26 @@ const SESSIONS = {
     <tr><td>Corde à sauter / pogo</td><td>50</td></tr>
     </tbody></table></div>`,
 
-  'wod2': `<div class="session-block"><div class="session-block-title"><span class="tag tag-wu">WU</span> Même que WOD 1</div></div>
-    <div class="session-block"><div class="session-block-title"><span class="tag tag-wod">WOD 2</span> AMRAP 16' – Circuit intensifié</div>
-    <p style="font-size:.82rem;color:#888;margin-bottom:10px;">Faire le maximum de tours en 16 minutes. Intensité ++.</p>
-    <table class="exo-table"><thead><tr><th>Exercice</th><th>Reps</th></tr></thead><tbody>
-    <tr><td>5' corde à sauter en continu</td><td>si arrêt = 2 burpees &lt; 1' · 3 burpees 1'–3' · 4 burpees 3'–5'</td></tr>
-    <tr><td>Squat jump<a class="vid-btn" href="https://www.youtube.com/shorts/KDEMcsQnUq0" target="_blank">Vidéo</a></td><td>10</td></tr>
-    <tr><td>Forward lunge</td><td>19</td></tr>
-    <tr><td>Push-up<a class="vid-btn" href="https://www.youtube.com/shorts/n8PJC6yo_1o" target="_blank">Vidéo</a></td><td>10</td></tr>
-    <tr><td>Sit-up<a class="vid-btn" href="https://www.youtube.com/shorts/SDE4nWuDCZs" target="_blank">Vidéo</a></td><td>20</td></tr>
-    <tr><td>Corde à sauter</td><td>50</td></tr>
-    </tbody></table></div>`,
+  'wod2': `<div class="session-block">
+    <div class="session-block-title"><span class="tag tag-wu">WU</span> 5' corde à sauter en continu</div>
+    <p style="font-size:.82rem;color:#aaa;margin-bottom:12px;">Faire 5 minutes de corde à sauter sans interruption. Si arrêt, pénalité burpees selon le moment de l'arrêt :</p>
+    <table class="exo-table"><thead><tr><th>Moment de l'arrêt</th><th>Pénalité</th></tr></thead><tbody>
+    <tr><td>Avant 1'</td><td><strong>2 burpees</strong></td></tr>
+    <tr><td>Entre 1' et 3'</td><td><strong>3 burpees</strong></td></tr>
+    <tr><td>Entre 3' et 5'</td><td><strong>4 burpees</strong></td></tr>
+    </tbody></table>
+    <p style="font-size:.78rem;color:#666;margin-top:8px;font-style:italic;">Plus le temps s'écoule, plus ça coûte cher.</p>
+  </div>
+  <div class="session-block">
+    <div class="session-block-title"><span class="tag tag-wod">WOD 2</span> AMRAP 16' — faire le plus de tours possible</div>
+    <table class="exo-table"><thead><tr><th>Exercice</th><th>Reps</th><th>Vidéo</th></tr></thead><tbody>
+    <tr><td>Squat jump</td><td>10</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/KDEMcsQnUq0" target="_blank" rel="noopener noreferrer">Vidéo</a></td></tr>
+    <tr><td>Lunges</td><td>19</td><td></td></tr>
+    <tr><td>Push-up</td><td>10</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/n8PJC6yo_1o" target="_blank" rel="noopener noreferrer">Vidéo</a></td></tr>
+    <tr><td>Sit-up</td><td>20</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/SDE4nWuDCZs" target="_blank" rel="noopener noreferrer">Vidéo</a></td></tr>
+    <tr><td>Corde à sauter</td><td>50</td><td></td></tr>
+    </tbody></table>
+  </div>`,
 
   'wod1-reg': `<div class="session-block"><div class="session-block-title"><span class="tag tag-wu">WU</span> 4 rounds · 20"/10"</div>
     <table class="exo-table"><thead><tr><th>Exercice WU</th><th>Reps</th></tr></thead><tbody>
@@ -1170,11 +1223,26 @@ const SESSIONS = {
     <tr><td>Push-up<a class="vid-btn" href="https://www.youtube.com/shorts/n8PJC6yo_1o" target="_blank">Vidéo</a></td><td>10</td></tr><tr><td>Sit-up<a class="vid-btn" href="https://www.youtube.com/shorts/SDE4nWuDCZs" target="_blank">Vidéo</a></td><td>20</td></tr><tr><td>Pogo jump<a class="vid-btn" href="https://www.youtube.com/shorts/SjHRwhGXBl8" target="_blank">Vidéo</a></td><td>50</td></tr>
     </tbody></table></div>`,
 
-  'wod2-reg': `<div class="session-block"><div class="session-block-title"><span class="tag tag-wod">WOD 2 (optionnel)</span> AMRAP 16' · Semaine 3</div>
-    <table class="exo-table"><thead><tr><th>Exercice</th><th>Reps</th></tr></thead><tbody>
-    <tr><td>Squat jump<a class="vid-btn" href="https://www.youtube.com/shorts/KDEMcsQnUq0" target="_blank">Vidéo</a></td><td>10</td></tr><tr><td>Forward lunge</td><td>19</td></tr>
-    <tr><td>Push-up<a class="vid-btn" href="https://www.youtube.com/shorts/n8PJC6yo_1o" target="_blank">Vidéo</a></td><td>10</td></tr><tr><td>Sit-up<a class="vid-btn" href="https://www.youtube.com/shorts/SDE4nWuDCZs" target="_blank">Vidéo</a></td><td>20</td></tr><tr><td>Corde à sauter</td><td>50</td></tr>
-    </tbody></table></div>`,
+  'wod2-reg': `<div class="session-block">
+    <div class="session-block-title"><span class="tag tag-wu">WU</span> 5' corde à sauter en continu</div>
+    <p style="font-size:.82rem;color:#aaa;margin-bottom:12px;">Faire 5 minutes de corde à sauter sans interruption. Si arrêt, pénalité burpees selon le moment de l'arrêt :</p>
+    <table class="exo-table"><thead><tr><th>Moment de l'arrêt</th><th>Pénalité</th></tr></thead><tbody>
+    <tr><td>Avant 1'</td><td><strong>2 burpees</strong></td></tr>
+    <tr><td>Entre 1' et 3'</td><td><strong>3 burpees</strong></td></tr>
+    <tr><td>Entre 3' et 5'</td><td><strong>4 burpees</strong></td></tr>
+    </tbody></table>
+    <p style="font-size:.78rem;color:#666;margin-top:8px;font-style:italic;">Plus le temps s'écoule, plus ça coûte cher.</p>
+  </div>
+  <div class="session-block">
+    <div class="session-block-title"><span class="tag tag-wod">WOD 2</span> AMRAP 16' — faire le plus de tours possible</div>
+    <table class="exo-table"><thead><tr><th>Exercice</th><th>Reps</th><th>Vidéo</th></tr></thead><tbody>
+    <tr><td>Squat jump</td><td>10</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/KDEMcsQnUq0" target="_blank" rel="noopener noreferrer">Vidéo</a></td></tr>
+    <tr><td>Lunges</td><td>19</td><td></td></tr>
+    <tr><td>Push-up</td><td>10</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/n8PJC6yo_1o" target="_blank" rel="noopener noreferrer">Vidéo</a></td></tr>
+    <tr><td>Sit-up</td><td>20</td><td><a class="vid-btn" href="https://www.youtube.com/shorts/SDE4nWuDCZs" target="_blank" rel="noopener noreferrer">Vidéo</a></td></tr>
+    <tr><td>Corde à sauter</td><td>50</td><td></td></tr>
+    </tbody></table>
+  </div>`,
 
   'circuit-deload': `<div class="session-block"><div class="session-block-title"><span class="tag tag-gac">Circuit Training</span> Deload · Semaine 5</div>
     <p style="font-size:.85rem;color:#aaa;margin-bottom:12px;">Circuit allégé – récupération active. 3 tours, intensité modérée.</p>
@@ -2428,8 +2496,8 @@ function openGroup(key) {
 
   const orgas = {
     '17cdf': '5 semaines · 29 juin – 2 août 2026. 2× run/sem, 2× RM, GAC récurrents, mobilité/prévention quotidienne alternée, WOD et pliométrie en S3–S5.',
-    '15reg': '5 semaines · 29 juin – 2 août 2026. 2× EF/run (progression Objectif Semi M1), 2× RM, GAC 2×/sem, mobilité/prévention, WOD S3–S5. Samedi optionnel.',
-    '15pole': '5 semaines · 29 juin – 2 août 2026. Programme identique aux −15 Régions avec séances run issues de la progression Objectif Semi. Semaine 3 possible en stage. Samedi/Dimanche optionnels.'
+    '15reg': '7 semaines · 29 juin – 16 août 2026. 2× EF/run, 2× RM, GAC alterné, mobilité/prévention, WOD et pliométrie. Samedi optionnel.',
+    '15pole': '7 semaines · 29 juin – 16 août 2026. Programme identique aux −15 Régions. S6 et S7 : intensification (pliométrie, WOD, vitesse). Samedi/Dimanche optionnels.'
   };
   document.getElementById('orga-text').textContent = orgas[key];
 
